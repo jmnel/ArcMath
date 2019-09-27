@@ -10,6 +10,7 @@
 /home/jacques/repos/jmnel/ArcMath/build/Plot/CMakeFiles/rebuild_cache.dir
 /home/jacques/repos/jmnel/ArcMath/build/Plot/CMakeFiles/arcplot.dir
 /home/jacques/repos/jmnel/ArcMath/build/Plot/CMakeFiles/edit_cache.dir
+/home/jacques/repos/jmnel/ArcMath/build/Plot/CMakeFiles/arcplot_autogen.dir
 /home/jacques/repos/jmnel/ArcMath/build/Math/CMakeFiles/rebuild_cache.dir
 /home/jacques/repos/jmnel/ArcMath/build/Math/CMakeFiles/arcmath.dir
 /home/jacques/repos/jmnel/ArcMath/build/Math/CMakeFiles/edit_cache.dir

@@ -1,6 +1,6 @@
-#include <Geometry/Shapes/Plane.hpp>
+#include <Math/Geometry/Shapes/Plane.hpp>
 
-namespace arc {
+namespace arc::math {
 
     Plane::Plane() noexcept {
     }
@@ -9,4 +9,4 @@ namespace arc {
         : m_p( p ), m_n( n ) {
     }
 
-}  // namespace arc
+}  // namespace arc::math

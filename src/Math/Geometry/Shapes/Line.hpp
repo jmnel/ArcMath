@@ -1,9 +1,9 @@
 #pragma once
 
-#include <Math/Vec.hpp>
-#include <Utility/Assert.hpp>
+#include <Core/Debug/Assert.hpp>
+#include <Math/LinearAlgebra/Vec.hpp>
 
-namespace arc {
+namespace arc::math {
 
     template <class T = float, size_t N = 3>
     struct Line {
@@ -36,4 +36,4 @@ namespace arc {
     using Line3f = Line<float, 3>;
     using Line3d = Line<double, 3>;
 
-}  // namespace arc
+}  // namespace arc::math

@@ -1,17 +1,24 @@
 #pragma once
 
-//#include <QLayout>
-//#include <QPainter>
+#include <QLabel>
 #include <QWidget>
+
+namespace arc::plot {
+
+    class ListPlotModel;
+}
 
 namespace arc::gui {
 
     class ListPlotView : public QWidget {
     private:
         Q_OBJECT
+
+        QLabel *m_title = nullptr;
+        plot::ListPlotModel &m_model;
     signals:
     public:
-        explicit ListPlotView( QWidget *parent = 0 ) noexcept;
+        explicit ListPlotView( plot::ListPlotModel &model, QWidget *parent = 0 ) noexcept;
 
         virtual void paintEvent( QPaintEvent * );
 

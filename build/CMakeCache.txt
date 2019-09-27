@@ -218,10 +218,7 @@ arcgui_LIB_DEPENDS:STATIC=general;Qt5::Core;general;Qt5::Widgets;
 arclib_LIB_DEPENDS:STATIC=general;stdc++fs;
 
 //Dependencies for the target
-arcmath_LIB_DEPENDS:STATIC=general;arclib;general;stdc++fs;
-
-//Dependencies for the target
-arcplot_LIB_DEPENDS:STATIC=general;stdc++fs;
+arcplot_LIB_DEPENDS:STATIC=general;Qt5::Core;general;Qt5::Widgets;general;stdc++fs;
 
 
 ########################

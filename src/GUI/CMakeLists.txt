@@ -1,4 +1,4 @@
-# -- arcgui/CMakeLists.txt --
+# -- GUI/CMakeLists.txt --
 
 include_directories( . )
 
@@ -21,6 +21,8 @@ target_include_directories(arcgui PRIVATE ${CMAKE_CURRENT_LIST_DIR}/.. )
 
 include( ${CMAKE_CURRENT_LIST_DIR}/Widgets/CMakeLists.txt )
 include( ${CMAKE_CURRENT_LIST_DIR}/Application/CMakeLists.txt )
+include( ${CMAKE_CURRENT_LIST_DIR}/Notebook/CMakeLists.txt )
+include( ${CMAKE_CURRENT_LIST_DIR}/ObjectModel/CMakeLists.txt )
 
 #target_include_directories(arcgui 
 #    PUBLIC 

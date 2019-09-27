@@ -71,7 +71,7 @@ build playground/rebuild_cache: phony playground/CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for playground
 
-build cmake_object_order_depends_target_playground: phony || cmake_object_order_depends_target_arcgui playground/playground_autogen
+build cmake_object_order_depends_target_playground: phony || cmake_object_order_depends_target_arcgui cmake_object_order_depends_target_arcplot playground/playground_autogen
 build playground/CMakeFiles/playground.dir/playground_autogen/mocs_compilation.cpp.o: CXX_COMPILER__playground playground/playground_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_playground
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = playground/CMakeFiles/playground.dir/playground_autogen/mocs_compilation.cpp.o.d
@@ -198,6 +198,55 @@ build playground/CMakeFiles/playground.dir/__/GUI/Application/Application.cpp.o:
   INCLUDES = -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/GUI/Application
+build playground/CMakeFiles/playground.dir/__/GUI/Notebook/Notebook.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/Notebook.cpp || cmake_object_order_depends_target_playground
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = playground/CMakeFiles/playground.dir/__/GUI/Notebook/Notebook.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = playground/CMakeFiles/playground.dir
+  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/GUI/Notebook
+build playground/CMakeFiles/playground.dir/__/GUI/Notebook/NotebookModel.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/NotebookModel.cpp || cmake_object_order_depends_target_playground
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = playground/CMakeFiles/playground.dir/__/GUI/Notebook/NotebookModel.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = playground/CMakeFiles/playground.dir
+  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/GUI/Notebook
+build playground/CMakeFiles/playground.dir/__/GUI/Notebook/NotebookView.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/NotebookView.cpp || cmake_object_order_depends_target_playground
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = playground/CMakeFiles/playground.dir/__/GUI/Notebook/NotebookView.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = playground/CMakeFiles/playground.dir
+  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/GUI/Notebook
+build playground/CMakeFiles/playground.dir/__/GUI/Notebook/NotebookController.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/NotebookController.cpp || cmake_object_order_depends_target_playground
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = playground/CMakeFiles/playground.dir/__/GUI/Notebook/NotebookController.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = playground/CMakeFiles/playground.dir
+  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/GUI/Notebook
+build playground/CMakeFiles/playground.dir/__/GUI/ObjectModel/Object.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/GUI/ObjectModel/Object.cpp || cmake_object_order_depends_target_playground
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = playground/CMakeFiles/playground.dir/__/GUI/ObjectModel/Object.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = playground/CMakeFiles/playground.dir
+  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/GUI/ObjectModel
+build playground/CMakeFiles/playground.dir/__/Plot/Plots/ListPlot.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/ListPlot.cpp || cmake_object_order_depends_target_playground
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = playground/CMakeFiles/playground.dir/__/Plot/Plots/ListPlot.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = playground/CMakeFiles/playground.dir
+  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Plot/Plots
+build playground/CMakeFiles/playground.dir/__/Plot/Plots/ListPlotModel.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/ListPlotModel.cpp || cmake_object_order_depends_target_playground
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = playground/CMakeFiles/playground.dir/__/Plot/Plots/ListPlotModel.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = playground/CMakeFiles/playground.dir
+  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Plot/Plots
 
 # =============================================================================
 # Link build statements for EXECUTABLE target playground
@@ -206,9 +255,9 @@ build playground/CMakeFiles/playground.dir/__/GUI/Application/Application.cpp.o:
 #############################################
 # Link the executable bin/playground
 
-build bin/playground: CXX_EXECUTABLE_LINKER__playground playground/CMakeFiles/playground.dir/playground_autogen/mocs_compilation.cpp.o playground/CMakeFiles/playground.dir/Main.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/Window.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/WindowView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/WindowModel.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/WindowController.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IWindowView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IWindowModel.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IWindowController.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindow.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindowModel.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindowView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindowController.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IGraphicsWindowModel.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IGraphicsWindowView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IGraphicsWindowController.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/ListPlotView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Application/Application.cpp.o | lib/libarcgui.a /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3 /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3 || lib/libarcgui.a playground/playground_autogen
+build bin/playground: CXX_EXECUTABLE_LINKER__playground playground/CMakeFiles/playground.dir/playground_autogen/mocs_compilation.cpp.o playground/CMakeFiles/playground.dir/Main.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/Window.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/WindowView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/WindowModel.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/WindowController.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IWindowView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IWindowModel.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IWindowController.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindow.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindowModel.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindowView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindowController.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IGraphicsWindowModel.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IGraphicsWindowView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IGraphicsWindowController.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Widgets/ListPlotView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Application/Application.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Notebook/Notebook.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Notebook/NotebookModel.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Notebook/NotebookView.cpp.o playground/CMakeFiles/playground.dir/__/GUI/Notebook/NotebookController.cpp.o playground/CMakeFiles/playground.dir/__/GUI/ObjectModel/Object.cpp.o playground/CMakeFiles/playground.dir/__/Plot/Plots/ListPlot.cpp.o playground/CMakeFiles/playground.dir/__/Plot/Plots/ListPlotModel.cpp.o | lib/libarcgui.a lib/libarcplot.a /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3 /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3 /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3 || lib/libarcgui.a lib/libarcplot.a playground/playground_autogen
   FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib lib/libarcgui.a /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3 /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3
+  LINK_LIBRARIES = -Wl,-rpath,/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib lib/libarcgui.a lib/libarcplot.a /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3 /usr/lib64/libQt5Widgets.so.5.12.3 /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3 -lstdc++fs /usr/lib64/libQt5Gui.so.5.12.3 /usr/lib64/libQt5Core.so.5.12.3
   LINK_PATH = -L/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   POST_BUILD = :
@@ -229,12 +278,12 @@ build playground/edit_cache: phony playground/CMakeFiles/edit_cache.util
 #############################################
 # Utility command for playground_autogen
 
-build playground/playground_autogen: phony playground/CMakeFiles/playground_autogen playground/playground_autogen/mocs_compilation.cpp lib/libarcgui.a
+build playground/playground_autogen: phony playground/CMakeFiles/playground_autogen playground/playground_autogen/mocs_compilation.cpp lib/libarcgui.a lib/libarcplot.a
 
 #############################################
 # Custom command for playground/CMakeFiles/playground_autogen
 
-build playground/CMakeFiles/playground_autogen playground/playground_autogen/mocs_compilation.cpp: CUSTOM_COMMAND || GUI/arcgui_autogen lib/libarcgui.a
+build playground/CMakeFiles/playground_autogen playground/playground_autogen/mocs_compilation.cpp: CUSTOM_COMMAND || GUI/arcgui_autogen Plot/arcplot_autogen lib/libarcgui.a lib/libarcplot.a
   COMMAND = cd /home/jacques/repos/jmnel/ArcMath/build/playground && /usr/bin/cmake -E cmake_autogen /home/jacques/repos/jmnel/ArcMath/build/playground/CMakeFiles/playground_autogen.dir/AutogenInfo.cmake Debug
   DESC = Automatic MOC and UIC for target playground
   restat = 1
@@ -320,11 +369,26 @@ build Plot/rebuild_cache: phony Plot/CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for arcplot
 
-build cmake_object_order_depends_target_arcplot: phony || Plot/CMakeFiles/arcplot.dir
+build cmake_object_order_depends_target_arcplot: phony || Plot/arcplot_autogen
+build Plot/CMakeFiles/arcplot.dir/arcplot_autogen/mocs_compilation.cpp.o: CXX_COMPILER__arcplot Plot/arcplot_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_arcplot
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = Plot/CMakeFiles/arcplot.dir/arcplot_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -IPlot -I/home/jacques/repos/jmnel/ArcMath/src/Plot -IPlot/arcplot_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Plot/. -I/home/jacques/repos/jmnel/ArcMath/src/Plot/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = Plot/CMakeFiles/arcplot.dir
+  OBJECT_FILE_DIR = Plot/CMakeFiles/arcplot.dir/arcplot_autogen
 build Plot/CMakeFiles/arcplot.dir/Plots/ListPlot.cpp.o: CXX_COMPILER__arcplot /home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/ListPlot.cpp || cmake_object_order_depends_target_arcplot
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = Plot/CMakeFiles/arcplot.dir/Plots/ListPlot.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Plot/.
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -IPlot -I/home/jacques/repos/jmnel/ArcMath/src/Plot -IPlot/arcplot_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Plot/. -I/home/jacques/repos/jmnel/ArcMath/src/Plot/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = Plot/CMakeFiles/arcplot.dir
+  OBJECT_FILE_DIR = Plot/CMakeFiles/arcplot.dir/Plots
+build Plot/CMakeFiles/arcplot.dir/Plots/ListPlotModel.cpp.o: CXX_COMPILER__arcplot /home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/ListPlotModel.cpp || cmake_object_order_depends_target_arcplot
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = Plot/CMakeFiles/arcplot.dir/Plots/ListPlotModel.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -IPlot -I/home/jacques/repos/jmnel/ArcMath/src/Plot -IPlot/arcplot_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Plot/. -I/home/jacques/repos/jmnel/ArcMath/src/Plot/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
   OBJECT_DIR = Plot/CMakeFiles/arcplot.dir
   OBJECT_FILE_DIR = Plot/CMakeFiles/arcplot.dir/Plots
 
@@ -335,7 +399,7 @@ build Plot/CMakeFiles/arcplot.dir/Plots/ListPlot.cpp.o: CXX_COMPILER__arcplot /h
 #############################################
 # Link the static library lib/libarcplot.a
 
-build lib/libarcplot.a: CXX_STATIC_LIBRARY_LINKER__arcplot Plot/CMakeFiles/arcplot.dir/Plots/ListPlot.cpp.o
+build lib/libarcplot.a: CXX_STATIC_LIBRARY_LINKER__arcplot Plot/CMakeFiles/arcplot.dir/arcplot_autogen/mocs_compilation.cpp.o Plot/CMakeFiles/arcplot.dir/Plots/ListPlot.cpp.o Plot/CMakeFiles/arcplot.dir/Plots/ListPlotModel.cpp.o || Plot/arcplot_autogen
   LANGUAGE_COMPILE_FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g
   OBJECT_DIR = Plot/CMakeFiles/arcplot.dir
   POST_BUILD = :
@@ -352,6 +416,19 @@ build Plot/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
   pool = console
   restat = 1
 build Plot/edit_cache: phony Plot/CMakeFiles/edit_cache.util
+
+#############################################
+# Utility command for arcplot_autogen
+
+build Plot/arcplot_autogen: phony Plot/CMakeFiles/arcplot_autogen Plot/arcplot_autogen/mocs_compilation.cpp
+
+#############################################
+# Custom command for Plot/CMakeFiles/arcplot_autogen
+
+build Plot/CMakeFiles/arcplot_autogen Plot/arcplot_autogen/mocs_compilation.cpp: CUSTOM_COMMAND
+  COMMAND = cd /home/jacques/repos/jmnel/ArcMath/build/Plot && /usr/bin/cmake -E cmake_autogen /home/jacques/repos/jmnel/ArcMath/build/Plot/CMakeFiles/arcplot_autogen.dir/AutogenInfo.cmake Debug
+  DESC = Automatic MOC and UIC for target arcplot
+  restat = 1
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/jacques/repos/jmnel/ArcMath/src/CMakeLists.txt
@@ -374,61 +451,49 @@ build Math/rebuild_cache: phony Math/CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for arcmath
 
-build cmake_object_order_depends_target_arcmath: phony || cmake_object_order_depends_target_arclib
-build Math/CMakeFiles/arcmath.dir/Core/CoreMath.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Core/CoreMath.cpp || cmake_object_order_depends_target_arcmath
-  DEP_FILE = Math/CMakeFiles/arcmath.dir/Core/CoreMath.cpp.o.d
+build cmake_object_order_depends_target_arcmath: phony || Math/CMakeFiles/arcmath.dir
+build Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/CoreMath.cpp || cmake_object_order_depends_target_arcmath
+  DEP_FILE = Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o.d
   FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core
+  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
-  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Core
+  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o.d
   FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core
+  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o.d
   FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core
+  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o.d
   FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core
+  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o.d
   FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core
+  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o.d
   FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core
+  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o.d
   FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core
+  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
-build Math/CMakeFiles/arcmath.dir/__/Core/Utility/Result.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/Result.cpp || cmake_object_order_depends_target_arcmath
-  DEP_FILE = Math/CMakeFiles/arcmath.dir/__/Core/Utility/Result.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core
-  OBJECT_DIR = Math/CMakeFiles/arcmath.dir
-  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/__/Core/Utility
-build Math/CMakeFiles/arcmath.dir/__/Core/Utility/StringUtility.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/StringUtility.cpp || cmake_object_order_depends_target_arcmath
-  DEP_FILE = Math/CMakeFiles/arcmath.dir/__/Core/Utility/StringUtility.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core
-  OBJECT_DIR = Math/CMakeFiles/arcmath.dir
-  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/__/Core/Utility
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target arcmath
@@ -437,7 +502,7 @@ build Math/CMakeFiles/arcmath.dir/__/Core/Utility/StringUtility.cpp.o: CXX_COMPI
 #############################################
 # Link the static library lib/libarcmath.a
 
-build lib/libarcmath.a: CXX_STATIC_LIBRARY_LINKER__arcmath Math/CMakeFiles/arcmath.dir/Core/CoreMath.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o Math/CMakeFiles/arcmath.dir/__/Core/Utility/Result.cpp.o Math/CMakeFiles/arcmath.dir/__/Core/Utility/StringUtility.cpp.o || lib/libarclib.a
+build lib/libarcmath.a: CXX_STATIC_LIBRARY_LINKER__arcmath Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o
   LANGUAGE_COMPILE_FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   POST_BUILD = :
@@ -596,6 +661,41 @@ build GUI/CMakeFiles/arcgui.dir/Application/Application.cpp.o: CXX_COMPILER__arc
   INCLUDES = -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
   OBJECT_DIR = GUI/CMakeFiles/arcgui.dir
   OBJECT_FILE_DIR = GUI/CMakeFiles/arcgui.dir/Application
+build GUI/CMakeFiles/arcgui.dir/Notebook/Notebook.cpp.o: CXX_COMPILER__arcgui /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/Notebook.cpp || cmake_object_order_depends_target_arcgui
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = GUI/CMakeFiles/arcgui.dir/Notebook/Notebook.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = GUI/CMakeFiles/arcgui.dir
+  OBJECT_FILE_DIR = GUI/CMakeFiles/arcgui.dir/Notebook
+build GUI/CMakeFiles/arcgui.dir/Notebook/NotebookModel.cpp.o: CXX_COMPILER__arcgui /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/NotebookModel.cpp || cmake_object_order_depends_target_arcgui
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = GUI/CMakeFiles/arcgui.dir/Notebook/NotebookModel.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = GUI/CMakeFiles/arcgui.dir
+  OBJECT_FILE_DIR = GUI/CMakeFiles/arcgui.dir/Notebook
+build GUI/CMakeFiles/arcgui.dir/Notebook/NotebookView.cpp.o: CXX_COMPILER__arcgui /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/NotebookView.cpp || cmake_object_order_depends_target_arcgui
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = GUI/CMakeFiles/arcgui.dir/Notebook/NotebookView.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = GUI/CMakeFiles/arcgui.dir
+  OBJECT_FILE_DIR = GUI/CMakeFiles/arcgui.dir/Notebook
+build GUI/CMakeFiles/arcgui.dir/Notebook/NotebookController.cpp.o: CXX_COMPILER__arcgui /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/NotebookController.cpp || cmake_object_order_depends_target_arcgui
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = GUI/CMakeFiles/arcgui.dir/Notebook/NotebookController.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = GUI/CMakeFiles/arcgui.dir
+  OBJECT_FILE_DIR = GUI/CMakeFiles/arcgui.dir/Notebook
+build GUI/CMakeFiles/arcgui.dir/ObjectModel/Object.cpp.o: CXX_COMPILER__arcgui /home/jacques/repos/jmnel/ArcMath/src/GUI/ObjectModel/Object.cpp || cmake_object_order_depends_target_arcgui
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = GUI/CMakeFiles/arcgui.dir/ObjectModel/Object.cpp.o.d
+  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17
+  INCLUDES = -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui
+  OBJECT_DIR = GUI/CMakeFiles/arcgui.dir
+  OBJECT_FILE_DIR = GUI/CMakeFiles/arcgui.dir/ObjectModel
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target arcgui
@@ -604,7 +704,7 @@ build GUI/CMakeFiles/arcgui.dir/Application/Application.cpp.o: CXX_COMPILER__arc
 #############################################
 # Link the static library lib/libarcgui.a
 
-build lib/libarcgui.a: CXX_STATIC_LIBRARY_LINKER__arcgui GUI/CMakeFiles/arcgui.dir/arcgui_autogen/mocs_compilation.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/Window.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/WindowView.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/WindowModel.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/WindowController.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IWindowView.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IWindowModel.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IWindowController.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindow.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindowModel.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindowView.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindowController.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IGraphicsWindowModel.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IGraphicsWindowView.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IGraphicsWindowController.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/ListPlotView.cpp.o GUI/CMakeFiles/arcgui.dir/Application/Application.cpp.o || GUI/arcgui_autogen
+build lib/libarcgui.a: CXX_STATIC_LIBRARY_LINKER__arcgui GUI/CMakeFiles/arcgui.dir/arcgui_autogen/mocs_compilation.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/Window.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/WindowView.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/WindowModel.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/WindowController.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IWindowView.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IWindowModel.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IWindowController.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindow.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindowModel.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindowView.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindowController.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IGraphicsWindowModel.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IGraphicsWindowView.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/IGraphicsWindowController.cpp.o GUI/CMakeFiles/arcgui.dir/Widgets/ListPlotView.cpp.o GUI/CMakeFiles/arcgui.dir/Application/Application.cpp.o GUI/CMakeFiles/arcgui.dir/Notebook/Notebook.cpp.o GUI/CMakeFiles/arcgui.dir/Notebook/NotebookModel.cpp.o GUI/CMakeFiles/arcgui.dir/Notebook/NotebookView.cpp.o GUI/CMakeFiles/arcgui.dir/Notebook/NotebookController.cpp.o GUI/CMakeFiles/arcgui.dir/ObjectModel/Object.cpp.o || GUI/arcgui_autogen
   LANGUAGE_COMPILE_FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g
   OBJECT_DIR = GUI/CMakeFiles/arcgui.dir
   POST_BUILD = :
@@ -642,6 +742,7 @@ build arcgui_autogen: phony GUI/arcgui_autogen
 build arclib: phony lib/libarclib.a
 build arcmath: phony lib/libarcmath.a
 build arcplot: phony lib/libarcplot.a
+build arcplot_autogen: phony Plot/arcplot_autogen
 build libarcgui.a: phony lib/libarcgui.a
 build libarclib.a: phony lib/libarclib.a
 build libarcmath.a: phony lib/libarcmath.a
@@ -699,13 +800,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/jacques/repos/jmnel/ArcMath/src/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Debug/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Application/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/LinearAlgebra/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Plot/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/playground/CMakeLists.txt /usr/lib64/cmake/Qt5/Qt5Config.cmake /usr/lib64/cmake/Qt5/Qt5ConfigVersion.cmake /usr/lib64/cmake/Qt5/Qt5ModuleLocation.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfig.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.14.6/CMakeCXXCompiler.cmake CMakeFiles/3.14.6/CMakeSystem.cmake conanbuildinfo.cmake
+build build.ninja: RERUN_CMAKE | /home/jacques/repos/jmnel/ArcMath/src/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Debug/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Application/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/ObjectModel/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/LinearAlgebra/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Plot/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/playground/CMakeLists.txt /usr/lib64/cmake/Qt5/Qt5Config.cmake /usr/lib64/cmake/Qt5/Qt5ConfigVersion.cmake /usr/lib64/cmake/Qt5/Qt5ModuleLocation.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfig.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.14.6/CMakeCXXCompiler.cmake CMakeFiles/3.14.6/CMakeSystem.cmake conanbuildinfo.cmake
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/jacques/repos/jmnel/ArcMath/src/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Debug/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Application/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/LinearAlgebra/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Plot/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/playground/CMakeLists.txt /usr/lib64/cmake/Qt5/Qt5Config.cmake /usr/lib64/cmake/Qt5/Qt5ConfigVersion.cmake /usr/lib64/cmake/Qt5/Qt5ModuleLocation.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfig.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.14.6/CMakeCXXCompiler.cmake CMakeFiles/3.14.6/CMakeSystem.cmake conanbuildinfo.cmake: phony
+build /home/jacques/repos/jmnel/ArcMath/src/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Debug/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Application/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Notebook/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/ObjectModel/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/LinearAlgebra/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Plot/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/playground/CMakeLists.txt /usr/lib64/cmake/Qt5/Qt5Config.cmake /usr/lib64/cmake/Qt5/Qt5ConfigVersion.cmake /usr/lib64/cmake/Qt5/Qt5ModuleLocation.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib64/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfig.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake /usr/lib64/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.14.6/CMakeCXXCompiler.cmake CMakeFiles/3.14.6/CMakeSystem.cmake conanbuildinfo.cmake: phony
 
 #############################################
 # Clean all the built files.

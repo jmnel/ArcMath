@@ -1,6 +1,6 @@
-#include <Geometry/Shapes/Arc2d.hpp>
+#include <Math/Geometry/Shapes/Arc2d.hpp>
 
-namespace arc {
+namespace arc::math {
 
     Arc2d::Arc2d() noexcept {
     }
@@ -15,4 +15,4 @@ namespace arc {
           m_theta1( theta1 ) {
     }
 
-}  // namespace arc
+}  // namespace arc::math

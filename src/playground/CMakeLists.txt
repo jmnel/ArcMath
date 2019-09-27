@@ -21,7 +21,7 @@ add_executable( playground Main.cpp )
 #include_directories( "../arclib" )
 
 target_link_libraries(playground PRIVATE arcgui)
-#target_link_libraries(playground ${CONAN_LIBS})
+target_link_libraries(playground PRIVATE arcplot)
 
 target_include_directories(playground PRIVATE ${CMAKE_CURRENT_LIST_DIR}/.. )
 

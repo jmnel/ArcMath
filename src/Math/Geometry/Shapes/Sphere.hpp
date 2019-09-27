@@ -1,8 +1,8 @@
 #pragma once
 
-#include <LinearAlgebra/Vec.hpp>
+#include <Math/LinearAlgebra/Vec.hpp>
 
-namespace arc {
+namespace arc::math {
 
     class Sphere {
     public:
@@ -13,4 +13,4 @@ namespace arc {
         Sphere( Vec3f const &p, const float r ) noexcept;
     };
 
-}  // namespace arc
+}  // namespace arc::math

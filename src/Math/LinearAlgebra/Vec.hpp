@@ -2,10 +2,10 @@
 
 #include <iostream>
 
-#include <Core/CoreMath.hpp>
-#include <Debug/Assert.hpp>
+#include <Core/Debug/Assert.hpp>
+#include <Math/CoreMath.hpp>
 
-namespace arc {
+namespace arc::math {
 
     namespace details {
         template <bool>
@@ -56,24 +56,24 @@ namespace arc {
         static_assert( N > 1, "Size of 'n-tuple' must be > 1." );
         Vec() noexcept;
 
-        template <class S>
-        Vec( S k );
+        //        template <class S>
+        Vec( const T k );
         //	for (size_t i = 0; i < N; i++) {
         //		operator[](i) = k;
         //	}
         //}
 
-        template <class S>
-        Vec( S x, S y );
+        //        template <class S>
+        Vec( const T x, const T y );
 
-        template <class S>
-        Vec( S x, S y, S z );
+        //        template <class S>
+        Vec( const T x, const T y, const T z );
 
-        template <class S>
-        Vec( S x, S y, S z, S w );
+        //        template <class S>
+        Vec( const T x, const T y, const T z, const T w );
 
-        template <class S>
-        Vec( Vec<S, N> const &v );
+        //        template <class S>
+        Vec( Vec<T, N> const &v );
 
         template <size_t M>
         Vec( Vec<T, M> const &v, T const &s );
@@ -285,6 +285,6 @@ namespace arc {
 
         return v / dist;
     }
-}  // namespace arc
+}  // namespace arc::math
 
 #include "Vec.inl"

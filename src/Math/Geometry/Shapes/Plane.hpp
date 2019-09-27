@@ -1,8 +1,8 @@
 #pragma once
 
-#include <LinearAlgebra/Vec.hpp>
+#include <Math/LinearAlgebra/Vec.hpp>
 
-namespace arc {
+namespace arc::math {
 
     class Plane {
     public:
@@ -13,4 +13,4 @@ namespace arc {
         Plane( Vec3f const &p, Vec3f const &n ) noexcept;
     };
 
-}  // namespace arc
+}  // namespace arc::math

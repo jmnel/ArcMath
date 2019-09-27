@@ -1,8 +1,8 @@
 #pragma once
 
-#include <Math/Vec.hpp>
+#include <Math/LinearAlgebra/Vec.hpp>
 
-namespace arc {
+namespace arc::math {
 
     template <class T = float, const size_t N = 3>
     struct Ray {
@@ -36,4 +36,4 @@ namespace arc {
     using Ray3f = Ray<float, 3>;
     using Ray3d = Ray<double, 3>;
 
-}  // namespace arc
+}  // namespace arc::math

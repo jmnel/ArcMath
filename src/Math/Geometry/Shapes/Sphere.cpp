@@ -1,6 +1,6 @@
-#include <Geometry/Shapes/Sphere.hpp>
+#include <Math/Geometry/Shapes/Sphere.hpp>
 
-namespace arc {
+namespace arc::math {
 
     Sphere::Sphere() noexcept {
     }
@@ -9,4 +9,4 @@ namespace arc {
         : m_p( p ), m_r( r ) {
     }
 
-}  // namespace arc
+}  // namespace arc::math

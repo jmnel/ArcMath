@@ -1,6 +1,6 @@
-#include <Geometry/Shapes/Circle2d.hpp>
+#include <Math/Geometry/Shapes/Circle2d.hpp>
 
-namespace arc {
+namespace arc::math {
 
     Circle2d::Circle2d() noexcept {
     }
@@ -9,4 +9,4 @@ namespace arc {
         : m_center( center ), m_radius( radius ) {
     }
 
-}  // namespace arc
+}  // namespace arc::math

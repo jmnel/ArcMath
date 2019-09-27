@@ -1,8 +1,8 @@
 #pragma once
 
-#include <LinearAlgebra/Vec.hpp>
+#include <Math/LinearAlgebra/Vec.hpp>
 
-namespace arc {
+namespace arc::math {
 
     class Circle2d {
     public:
@@ -13,4 +13,4 @@ namespace arc {
         Circle2d( Vec2f const &center, const float radius ) noexcept;
     };
 
-}  // namespace arc
+}  // namespace arc::math

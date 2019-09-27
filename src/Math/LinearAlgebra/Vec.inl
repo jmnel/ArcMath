@@ -1,7 +1,7 @@
 #include <sstream>
 #include <string>
 
-namespace arc {
+namespace arc::math {
 
     template <class T, size_t N>
     Vec<T, N>::Vec() noexcept {
@@ -11,45 +11,44 @@ namespace arc {
     }
 
     template <class T, size_t N>
-    template <class S>
-    Vec<T, N>::Vec( S k ) {
+    Vec<T, N>::Vec( const T k ) {
         for( size_t i = 0; i < N; i++ ) {
-            operator[]( i ) = (T)k;
+            operator[]( i ) = k;
         }
     }
 
     template <class T, size_t N>
-    template <class S>
-    Vec<T, N>::Vec( S x, S y ) {
+    //    template <class S>
+    Vec<T, N>::Vec( const T x, const T y ) {
         static_assert( N == 2, "This constructor is reserved for 2-tuples." );
-        this->x = T( x );
-        this->y = T( y );
+        this->x = x;
+        this->y = y;
     }
 
     template <class T, size_t N>
-    template <class S>
-    Vec<T, N>::Vec( S x, S y, S z ) {
+    //    template <class S>
+    Vec<T, N>::Vec( const T x, const T y, const T z ) {
         static_assert( N == 3, "This constructor is reserved for 3-tuples." );
-        this->x = (T)x;
-        this->y = (T)y;
-        this->z = (T)z;
+        this->x = x;
+        this->y = y;
+        this->z = z;
     }
 
     template <class T, size_t N>
-    template <class S>
-    Vec<T, N>::Vec( S x, S y, S z, S w ) {
+    //    template <class S>
+    Vec<T, N>::Vec( const T x, const T y, const T z, const T w ) {
         static_assert( N == 4, "This constructor is reserved for 4-tuples." );
-        this->x = (T)x;
-        this->y = (T)y;
-        this->z = (T)z;
-        this->w = (T)w;
+        this->x = x;
+        this->y = y;
+        this->z = z;
+        this->w = w;
     }
 
     template <class T, size_t N>
-    template <class S>
-    Vec<T, N>::Vec( Vec<S, N> const &v ) {
+    //    template <class S>
+    Vec<T, N>::Vec( Vec<T, N> const &v ) {
         for( size_t i = 0; i < N; i++ ) {
-            this->operator[]( i ) = T( v[i] );
+            this->operator[]( i ) = v[i];
         }
     }
     template <class T, size_t N>
@@ -221,4 +220,4 @@ namespace arc {
         return os;
     }
 
-}  // namespace arc
+}  // namespace arc::math

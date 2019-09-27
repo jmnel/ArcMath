@@ -2,3 +2,4 @@
 #include "FHENQDPGQG/moc_GraphicsWindowView.cpp"
 #include "FHENQDPGQG/moc_ListPlotView.cpp"
 #include "FHENQDPGQG/moc_WindowView.cpp"
+#include "MPV2OLS2H2/moc_NotebookView.cpp"

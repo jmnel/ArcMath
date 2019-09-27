@@ -21,6 +21,7 @@ namespace arc::gui {
     //          m_title( tr( "Title" ), this ) {
     {
 
+        /*
         m_plotView = new ListPlotView;
         //        m_plotView = std::make_shared<ListPlotView>( this );
 
@@ -50,6 +51,7 @@ namespace arc::gui {
         QMenu* fileMenu = menuBar()->addMenu( tr( "&File" ) );
         QAction* aboutAct = fileMenu->addAction( tr( "About" ), this, &GraphicsWindowView::about );
 
+        */
         //        QPushButton* button = new QPushButton( "button", this );
         //        setCentralWidget( button );
         //        QWidget* centralWidget = new QWidget;

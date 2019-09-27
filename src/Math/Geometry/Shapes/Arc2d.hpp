@@ -1,8 +1,9 @@
 #pragma once
 
-#include <LinearAlgebra/Vec.hpp>
+#include <Math/CoreMath.hpp>
+#include <Math/LinearAlgebra/Vec.hpp>
 
-namespace arc {
+namespace arc::math {
 
     class Arc2d {
     public:
@@ -18,4 +19,4 @@ namespace arc {
                const float theta1 ) noexcept;
     };
 
-}  // namespace arc
+}  // namespace arc::math

@@ -18,7 +18,7 @@ namespace arc::gui {
     private:
         Q_OBJECT
 
-        ListPlotView* m_plotView;
+        //        ListPlotView* m_plotView;
 
     signals:
     public:
