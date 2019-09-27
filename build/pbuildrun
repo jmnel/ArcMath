@@ -1,0 +1,4 @@
+#!/bin/bash
+ninja all
+./bin/playground
+#../targets/Debug/playground

@@ -1,0 +1,197 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=clang
+    compiler.libcxx=libstdc++11
+    compiler.version=8
+    os=Linux
+
+[requires]
+    Catch2/2.Y.Z
+    bzip2/1.Y.Z
+    double-conversion/3.Y.Z
+    qt/5.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Release
+    compiler=clang
+    compiler.libcxx=libstdc++11
+    compiler.version=8
+    os=Linux
+    os_build=Linux
+
+[full_requires]
+    Catch2/2.9.1@catchorg/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    OpenSSL/1.1.1a@conan/stable:2681e10468782653f57fcfad13121ea55961d87a
+    bzip2/1.0.8@conan/stable:95fae3fea96bca823cfefd4c887b5b869415bb9f
+    double-conversion/3.1.1@bincrafters/stable:3c16e11e139fc44ce87907092473006570fef7c5
+    freetype/2.9.0@bincrafters/stable:76abc5722c5a55870637b1f85c0beded5f1746aa
+    glib/2.56.1@bincrafters/stable:3e7949c08a00c6624a071ccf1b013ec17ba26b23
+    harfbuzz/2.3.0@bincrafters/stable:6d87124bcf4cc4435e13c44634d61b77404bef31
+    libjpeg/9c@bincrafters/stable:6d87124bcf4cc4435e13c44634d61b77404bef31
+    libpng/1.6.34@bincrafters/stable:2681e10468782653f57fcfad13121ea55961d87a
+    libpq/9.6.9@bincrafters/stable:a153e1c99acf77803578e0a7d5d4e4e433514679
+    mysql-connector-c/6.1.11@bincrafters/stable:7f5da213c3b03f680c99ae4ddd852f4cc0517469
+    odbc/2.3.7@bincrafters/stable:6d87124bcf4cc4435e13c44634d61b77404bef31
+    pcre2/10.32@bincrafters/stable:719bc78d4bd5e4d402091edd4f9bf5fc8dd5f43a
+    qt/5.12.1@bincrafters/stable:ef95d4668e15c368285c28a667d1065e3525f391
+    sqlite3/3.26.0@bincrafters/stable:1e7ba81ab4b275c1a00321a76b514d15e7228f90
+    xkbcommon/0.8.3@bincrafters/stable:7eb6a2bc5f5f88d3a0d095ff6a4fbdb95fa0d9c3
+    zlib/1.2.11@conan/stable:6d87124bcf4cc4435e13c44634d61b77404bef31
+
+[full_options]
+    OpenSSL:386=False
+    OpenSSL:fPIC=True
+    OpenSSL:no_asm=False
+    OpenSSL:no_async=False
+    OpenSSL:no_bf=False
+    OpenSSL:no_cast=False
+    OpenSSL:no_des=False
+    OpenSSL:no_dh=False
+    OpenSSL:no_dsa=False
+    OpenSSL:no_dso=False
+    OpenSSL:no_hmac=False
+    OpenSSL:no_md2=False
+    OpenSSL:no_md5=False
+    OpenSSL:no_mdc2=False
+    OpenSSL:no_rc2=False
+    OpenSSL:no_rc4=False
+    OpenSSL:no_rc5=False
+    OpenSSL:no_rsa=False
+    OpenSSL:no_sha=False
+    OpenSSL:no_sse2=False
+    OpenSSL:no_threads=False
+    OpenSSL:no_zlib=False
+    OpenSSL:openssldir=None
+    OpenSSL:shared=False
+    bzip2:build_executable=True
+    bzip2:fPIC=True
+    bzip2:shared=False
+    double-conversion:fPIC=True
+    double-conversion:shared=False
+    freetype:fPIC=True
+    freetype:shared=False
+    freetype:with_bzip2=True
+    freetype:with_png=True
+    freetype:with_zlib=True
+    glib:fPIC=True
+    glib:shared=True
+    glib:with_pcre=False
+    harfbuzz:fPIC=True
+    harfbuzz:shared=False
+    harfbuzz:with_freetype=False
+    libjpeg:fPIC=True
+    libjpeg:shared=False
+    libpng:fPIC=True
+    libpng:shared=False
+    libpq:fPIC=True
+    libpq:shared=False
+    libpq:with_openssl=False
+    libpq:with_zlib=True
+    mysql-connector-c:shared=True
+    mysql-connector-c:with_ssl=False
+    mysql-connector-c:with_zlib=True
+    odbc:fPIC=True
+    odbc:shared=False
+    pcre2:build_pcre2_16=True
+    pcre2:build_pcre2_32=True
+    pcre2:build_pcre2_8=True
+    pcre2:fPIC=True
+    pcre2:shared=False
+    pcre2:support_jit=True
+    pcre2:with_bzip2=True
+    qt:GUI=True
+    qt:commercial=False
+    qt:config=None
+    qt:cross_compile=None
+    qt:device=None
+    qt:opengl=desktop
+    qt:openssl=True
+    qt:qt3d=False
+    qt:qtactiveqt=False
+    qt:qtandroidextras=False
+    qt:qtbase=True
+    qt:qtcanvas3d=False
+    qt:qtcharts=False
+    qt:qtconnectivity=False
+    qt:qtdatavis3d=False
+    qt:qtdeclarative=False
+    qt:qtdoc=False
+    qt:qtgamepad=False
+    qt:qtgraphicaleffects=False
+    qt:qtimageformats=False
+    qt:qtlocation=False
+    qt:qtmacextras=False
+    qt:qtmultimedia=False
+    qt:qtnetworkauth=False
+    qt:qtpurchasing=False
+    qt:qtqa=False
+    qt:qtquickcontrols=False
+    qt:qtquickcontrols2=False
+    qt:qtremoteobjects=False
+    qt:qtrepotools=False
+    qt:qtscript=False
+    qt:qtscxml=False
+    qt:qtsensors=False
+    qt:qtserialbus=False
+    qt:qtserialport=False
+    qt:qtspeech=False
+    qt:qtsvg=False
+    qt:qttools=False
+    qt:qttranslations=False
+    qt:qtvirtualkeyboard=False
+    qt:qtwayland=False
+    qt:qtwebchannel=False
+    qt:qtwebengine=False
+    qt:qtwebglplugin=False
+    qt:qtwebsockets=False
+    qt:qtwebview=False
+    qt:qtwinextras=False
+    qt:qtx11extras=False
+    qt:qtxmlpatterns=False
+    qt:shared=True
+    qt:widgets=True
+    qt:with_doubleconversion=True
+    qt:with_freetype=True
+    qt:with_glib=True
+    qt:with_harfbuzz=True
+    qt:with_libalsa=False
+    qt:with_libjpeg=True
+    qt:with_libpng=True
+    qt:with_mysql=True
+    qt:with_odbc=True
+    qt:with_openal=False
+    qt:with_pcre2=True
+    qt:with_pq=True
+    qt:with_sdl2=False
+    qt:with_sqlite3=True
+    sqlite3:enable_column_metadata=True
+    sqlite3:enable_explain_comments=False
+    sqlite3:enable_fts3=False
+    sqlite3:enable_fts4=False
+    sqlite3:enable_fts5=False
+    sqlite3:enable_json1=False
+    sqlite3:enable_rtree=False
+    sqlite3:fPIC=True
+    sqlite3:omit_load_extension=False
+    sqlite3:shared=False
+    sqlite3:threadsafe=1
+    xkbcommon:docs=False
+    xkbcommon:fPIC=True
+    xkbcommon:shared=False
+    xkbcommon:with_wayland=False
+    xkbcommon:with_x11=True
+    zlib:fPIC=True
+    zlib:minizip=False
+    zlib:shared=False
+
+[recipe_hash]
+
+
+[env]
+

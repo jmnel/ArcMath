@@ -1,0 +1,283 @@
+[
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/playground_autogen/mocs_compilation.cpp.o -c /home/jacques/repos/jmnel/ArcMath/build/playground/playground_autogen/mocs_compilation.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/build/playground/playground_autogen/mocs_compilation.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/Main.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/playground/Main.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/playground/Main.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/Window.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/Window.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/Window.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/WindowView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/WindowModel.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowModel.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowModel.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/WindowController.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowController.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowController.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IWindowView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IWindowModel.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowModel.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowModel.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IWindowController.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowController.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowController.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindow.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindow.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindow.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindowModel.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowModel.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowModel.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindowView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/GraphicsWindowController.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowController.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowController.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IGraphicsWindowModel.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowModel.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowModel.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IGraphicsWindowView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/IGraphicsWindowController.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowController.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowController.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Widgets/ListPlotView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/ListPlotView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/ListPlotView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Iplayground -I/home/jacques/repos/jmnel/ArcMath/src/playground -Iplayground/playground_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/GUI/Application/Application.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Application/Application.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Application/Application.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Core/.     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Core/CMakeFiles/arclib.dir/Utility/Result.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/Result.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Core/Utility/Result.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Core/.     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Core/CMakeFiles/arclib.dir/Utility/StringUtility.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/StringUtility.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Core/Utility/StringUtility.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Plot/.     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Plot/CMakeFiles/arcplot.dir/Plots/ListPlot.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/ListPlot.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Plot/Plots/ListPlot.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Core/CoreMath.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Core/CoreMath.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Core/CoreMath.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/__/Core/Utility/Result.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/Result.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Core/Utility/Result.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Core     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/__/Core/Utility/StringUtility.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/StringUtility.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/Core/Utility/StringUtility.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/arcgui_autogen/mocs_compilation.cpp.o -c /home/jacques/repos/jmnel/ArcMath/build/GUI/arcgui_autogen/mocs_compilation.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/build/GUI/arcgui_autogen/mocs_compilation.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/Window.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/Window.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/Window.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/WindowView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/WindowModel.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowModel.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowModel.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/WindowController.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowController.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/WindowController.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/IWindowView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/IWindowModel.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowModel.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowModel.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/IWindowController.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowController.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IWindowController.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindow.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindow.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindow.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindowModel.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowModel.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowModel.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindowView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/GraphicsWindowController.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowController.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/GraphicsWindowController.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/IGraphicsWindowModel.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowModel.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowModel.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/IGraphicsWindowView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/IGraphicsWindowController.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowController.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/IGraphicsWindowController.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Widgets/ListPlotView.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/ListPlotView.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Widgets/ListPlotView.cpp"
+},
+
+{
+  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
+  "command": "/usr/lib/llvm/8/bin/clang++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -IGUI -I/home/jacques/repos/jmnel/ArcMath/src/GUI -IGUI/arcgui_autogen/include -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/GUI/. -I/home/jacques/repos/jmnel/ArcMath/src/GUI/.. -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui     -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -fPIC -std=gnu++17 -o GUI/CMakeFiles/arcgui.dir/Application/Application.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/GUI/Application/Application.cpp",
+  "file": "/home/jacques/repos/jmnel/ArcMath/src/GUI/Application/Application.cpp"
+}
+]

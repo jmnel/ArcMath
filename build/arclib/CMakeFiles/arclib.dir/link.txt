@@ -1,0 +1,2 @@
+ccache /usr/bin/ar qc ../lib/libarclib.a  CMakeFiles/arclib.dir/Utility/Result.cpp.o CMakeFiles/arclib.dir/Utility/StringUtility.cpp.o
+ccache /usr/bin/ranlib ../lib/libarclib.a

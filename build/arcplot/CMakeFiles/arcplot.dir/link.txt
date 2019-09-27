@@ -1,0 +1,2 @@
+ccache /usr/bin/ar qc ../lib/libarcplot.a  CMakeFiles/arcplot.dir/Plots/ListPlot.cpp.o
+ccache /usr/bin/ranlib ../lib/libarcplot.a
