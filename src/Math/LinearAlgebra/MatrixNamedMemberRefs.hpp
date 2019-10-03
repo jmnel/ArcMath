@@ -2,7 +2,7 @@
 
 #include <cstddef>
 
-//#include <Math/LinearAlgebra/MatrixTraits.hpp>
+#include <Math/LinearAlgebra/Traits.hpp>
 
 namespace arc::detail {
 
@@ -11,7 +11,7 @@ namespace arc::detail {
     struct traits;
 
     template <typename Derived,
-              bool hasNamedMemberRefsT = traits<Derived>::namedMemberRefsEnabled,
+              bool hasNamedMemberRefsT = get_named_member_refs_enabled<Derived>::value,
               size_t SizeT = traits<Derived>::Size>
     class MatrixNamedMemberRefs {
     };

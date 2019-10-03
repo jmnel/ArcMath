@@ -13,74 +13,70 @@ using std::endl;
 
 namespace arc {
 
+    template <typename IndexT,
+              typename MemoryTypeT,
+              typename DensityInnerT,
+              typename DensityOuterT,
+              typename StorageOrderT,
+              int StrideInnerT,
+              int StrideOuterT,
+              typename HasNamedMembersT>
+    struct MatrixOptions {
+        typedef IndexT Index;
+        typedef DensityInnerT DensityInner;
+        typedef DensityOuterT DensityOuter;
+        typedef StorageOrderT StorageOrder;
+        static constexpr Index StrideInner = StrideInnerT;
+        static constexpr Index StrideOuter = StrideOuterT;
+        typedef HasNamedMembersT HasNamedMembers;
+    };
+
     namespace detail {
-
-        template <typename T>
-        struct hasNamedMemberRefs {
-            static constexpr bool value = false;
-        };
-
-        // Enables coefficient reference access to row major vector types.
-        template <typename ScalarT, int OptionsT, typename IndexT>
-        struct hasNamedMemberRefs<Matrix<ScalarT, 1, 1, OptionsT, IndexT>> {
-            static constexpr bool value = false;
-        };
-
-        template <typename ScalarT, int ColsT, int OptionsT, typename IndexT>
-        struct hasNamedMemberRefs<Matrix<ScalarT, 1, ColsT, OptionsT, IndexT>> {
-            static constexpr bool value = OptionsT & NamedMemberRefsEnabled;
-        };
-
-        // Enables coefficient reference access to column major vector types.
-        template <typename ScalarT, int RowsT, int OptionsT, typename IndexT>
-        struct hasNamedMemberRefs<Matrix<ScalarT, RowsT, 1, OptionsT, IndexT>> {
-            static constexpr bool value = OptionsT & NamedMemberRefsEnabled;
-        };
 
         template <typename ScalarT,
                   int RowsT,
                   int ColsT,
-                  int OptionsT,
-                  typename IndexT,
-                  >
-        struct traits<Matrix<ScalarT, RowsT, ColsT, OptionsT, IndexT>> {
-
-        private:
-            static constexpr int rowMajorBit = OptionsT & RowMajor ? RowMajorBit : 0;
-            static constexpr int accessorsBit = OptionsT & AccessorsEnabled ? AccessorsBit : 0;
+                  typename OptionsT>
+        struct traits<Matrix<ScalarT,
+                             RowsT,
+                             ColsT,
+                             OptionsT>> {
 
         public:
             typedef ScalarT Scalar;
-            typedef Matrix<ScalarT, RowsT, ColsT, OptionsT, IndexT> Derived;
-            typedef IndexT Index;
-            static constexpr IndexT Rows = RowsT;
-            static constexpr IndexT Cols = ColsT;
-            static constexpr IndexT Size = isVectorType<Derived>::value ? isRowMajor<Derived>::value ? Cols : Rows
-                                                                        : Rows * Cols;
-            static constexpr int Options = OptionsT;
-            static constexpr bool accessorsEnabled = accessorsBit != 0;
-            static constexpr bool namedMemberRefsEnabled = hasNamedMemberRefs<Derived>::value;
+            typedef Matrix<ScalarT, RowsT, ColsT, OptionsT> Derived;
+            typedef OptionsT Options;
+            typedef typename OptionsT::Index Index;
+            static constexpr Index Rows = RowsT;
+            static constexpr Index Cols = ColsT;
+            static constexpr Index Size = Rows * Cols;
         };
 
-        template <typename ScalarT, int RowsT, int ColsT, int OptionsT, typename IndexT>
+        //        template <typename
+
+        template <typename T>
         static constexpr void staticAssertVectorSize( const int size ) {
-            static_assert( isVectorType<Matrix<ScalarT, RowsT, ColsT, OptionsT>>::value,
-                           "Matrix is not vector type." );
-            static_assert( size < RowsT * ColsT, "Vector type size assert failed." );
+            static_assert( matrix_is_vector_type<T>::value, "Matrix is not vector." );
+            static_assert( size < traits<T>::Size, "Vector type size assert failed." );
         }
 
     }  // namespace detail
 
-    template <typename ScalarT, int RowsT, int ColsT, int OptionsT, typename IndexT>
-    class Matrix : public detail::MatrixBase<Matrix<ScalarT, RowsT, ColsT, OptionsT, IndexT>> {
+    template <typename ScalarT,
+              int RowsT,
+              int ColsT,
+              typename OptionsT>
+    class Matrix : public detail::MatrixBase<Matrix<ScalarT,
+                                                    RowsT,
+                                                    ColsT,
+                                                    OptionsT>> {
     public:
         typedef ScalarT Scalar;
         typedef detail::MatrixBase<Matrix> Base;
-        typedef IndexT Index;
+        typedef OptionsT Options;
+        typedef typename OptionsT::Index Index;
 
     private:
-        static constexpr int Options = OptionsT;
-
         template <typename T>
         void init1( T const &x,
                     typename std::enable_if<

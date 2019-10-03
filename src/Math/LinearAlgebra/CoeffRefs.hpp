@@ -10,8 +10,8 @@ namespace arc::detail {
     template <typename Derived,
               typename MatrixVectorTypeT = typename get_matrix_type<Derived>::type,
               typename StorageOrderT = typename get_storage_order<Derived>::type,
-              typename DensityInnerT = typename traits<Derived>::DensityInner,
-              typename DensityOuterT = typename traits<Derived>::DensityOuter>
+              typename DensityInnerT = typename traits<Derived>::Options::DensityInner,
+              typename DensityOuterT = typename traits<Derived>::Options::DensityOuter>
     class CoeffRefs {
 
         // Only row major oder is supported right now.

@@ -1,5 +1,7 @@
 #pragma once
 
+#include <type_traits>
+
 namespace arc::detail {
 
     template <typename T>
@@ -21,11 +23,12 @@ namespace arc::detail {
     struct matrix_storage_sparse_tag {};
     struct matrix_inner_tag {};
     struct matrix_outer_tag {};
+    struct matrix_has_named_members_tag {};
 
     struct matrix_vector_type_tag {};
     struct matrix_matrix_type_tag {};
 
-    // This tests if matrix is vector
+    // Remove this.
     template <typename T,
               bool isVectorT = ( traits<T>::Rows == 1 && traits<T>::Cols != 1 ) ||
                                ( traits<T>::Rows != 1 && traits<T>::Cols == 1 )>
@@ -41,30 +44,44 @@ namespace arc::detail {
         typedef matrix_matrix_type_tag type;
     };
 
+    // Tests if matrix is vector.
+    template <typename T>
+    struct matrix_is_vector_type {
+        static constexpr bool value = std::is_same<get_matrix_type<T>,
+                                                   matrix_vector_type_tag>::value;
+    };
+
     // Get inner or outer matrix storage density.
     template <typename T, typename InnerOrOuterT>
     struct get_storage_density;
 
     template <typename T>
     struct get_storage_density<T, matrix_inner_tag> {
-        typedef typename traits<T>::DensityInner type;
+        typedef typename traits<T>::Options::DensityInner type;
     };
 
     template <typename T>
     struct get_storage_density<T, matrix_outer_tag> {
-        typedef typename traits<T>::DensityOuter type;
+        typedef typename traits<T>::Options::DensityOuter type;
     };
 
     // Get matrix storage memory implementation type.
     template <typename T>
     struct get_storage_type {
-        typedef typename traits<T>::MemoryType type;
+        typedef typename traits<T>::Options::MemoryType type;
     };
 
     // Get matrix storage order.
     template <typename T>
     struct get_storage_order {
-        typedef typename traits<T>::StorageOrder type;
+        typedef typename traits<T>::Options::StorageOrder type;
+    };
+
+    // Get if matrix has named members.
+    template <typename T>
+    struct get_named_member_refs_enabled {
+        static constexpr bool value = std::is_same<get_named_member_refs_enabled<T>,
+                                                   matrix_has_named_members_tag>::value;
     };
 
     template <typename T>

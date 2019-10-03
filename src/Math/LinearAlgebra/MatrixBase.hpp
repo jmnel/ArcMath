@@ -7,9 +7,10 @@
 #include <Core/Debug/Assert.hpp>
 #include <Math/LinearAlgebra/Constants.hpp>
 //#include <Math/LinearAlgebra/MatrixAccessors.hpp>
+#include <Math/LinearAlgebra/CoeffRefs.hpp>
 #include <Math/LinearAlgebra/ForwardDeclarations.hpp>
-#include <Math/LinearAlgebra/MatrixCoeffRefs.hpp>
 #include <Math/LinearAlgebra/MatrixNamedMemberRefs.hpp>
+#include <Math/LinearAlgebra/MatrixStorage.hpp>
 #include <Math/LinearAlgebra/Traits.hpp>
 
 using std::array;
@@ -19,44 +20,10 @@ using std::string;
 
 namespace arc::detail {
 
-    template <typename T>
-    struct matrix_storage_order<T, true> {
-        typedef matrix_row_major_tag type;
-    };
-
-    template <typename T>
-    struct matrix_storage_order<T, false> {
-        typedef matrix_col_major_tag type;
-    };
-
-    template <typename T>
-    struct isRowMajor {
-        static constexpr bool value = ( traits<T>::Options & RowMajor ) != 0;
-    };
-
-    template <typename T>
-    struct isVectorType {
-        static constexpr bool value = false;
-    };
-
-    template <typename ScalarT, int OptionsT, typename IndexT>
-    struct isVectorType<Matrix<ScalarT, 1, 1, OptionsT, IndexT>> {
-        static constexpr bool value = false;
-    };
-
-    template <typename ScalarT, int ColsT, int OptionsT, typename IndexT>
-    struct isVectorType<Matrix<ScalarT, 1, ColsT, OptionsT, IndexT>> {
-        static constexpr bool value = true;
-    };
-
-    template <typename ScalarT, int RowsT, int OptionsT, typename IndexT>
-    struct isVectorType<Matrix<ScalarT, RowsT, 1, OptionsT, IndexT>> {
-        static constexpr bool value = true;
-    };
-
     template <typename Derived>
-    class MatrixBase : public MatrixNamedMemberRefs<Derived>,
-                       public MatrixCoeffRefs<Derived> {
+    class MatrixBase : public MatrixStorage<Derived>,
+                       public MatrixNamedMemberRefs<Derived> {
+        //                       public CoeffRefs<Derived> {
     public:
         typedef typename traits<Derived>::Scalar Scalar;
         typedef typename traits<Derived>::Index Index;
@@ -65,7 +32,7 @@ namespace arc::detail {
         static constexpr Index Cols = traits<Derived>::Cols;
         static constexpr Index Size = traits<Derived>::Size;
 
-        array<Scalar, Size> m_storage{};
+        //        array<Scalar, Size> m_storage{};
 
         inline static constexpr void checkTemplateParams() {
             static_assert( Rows > 0, "Matrix rows must be > 0." );
@@ -87,11 +54,12 @@ namespace arc::detail {
             if( list.size() == 1 ) {
                 auto const& inner = *list.begin();
                 if( inner.size() == 1 ) {
-                    m_storage.fill( *inner.begin() );
+                    //                    m_storage[0] = 5;
+                    //                    m_storage.fill( *inner.begin() );
                 } else {
                     massertf( inner.size() == Size, "Matrix initializer_list size wrong." );
                     static_assert( isRowMajor<Derived>::value );
-                    std::copy( inner.begin(), inner.end(), m_storage.begin() );
+                    //                    std::copy( inner.begin(), inner.end(), m_storage.begin() );
                 }
             } else {
                 static_assert( isRowMajor<Derived>::value );
@@ -101,13 +69,25 @@ namespace arc::detail {
                     massertf( inner.size() == Cols, "Matrix initializer_list size wrong." );
                     auto itList = inner.begin();
                     for( Index j = 0; j < inner.size(); ++j ) {
-                        m_storage[i * Cols + j] = *itList;
+                        //                        m_storage[i * Cols + j] = *itList;
                         ++itList;
                     }
                 }
             }
         }
     };
+
+    template <typename Derived>
+    std::ostream& operator<<( std::ostream& os, MatrixBase<Derived> const& m ) {
+        for( size_t i = 0; i < m.Rows; ++i ) {
+            os << "( " << m.coeffs( i, 0 );
+            for( size_t j = 1; j < m.Cols; ++j ) {
+                os << ", " << m.coeffs( i, j );
+            }
+            os << " )" << endl;
+        }
+        return os;
+    }
 
 }  // namespace arc::detail
 

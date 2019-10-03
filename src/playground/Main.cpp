@@ -14,21 +14,13 @@ using namespace arc;
 
 int main( int, char *[] ) {
 
-    detail::MatrixStorage<double,
-                          5,
-                          1,
-                          0,
-                          size_t,
-                          detail::matrix_storage_static_tag,
-                          detail::matrix_storage_dense_tag,
-                          detail::matrix_storage_dense_tag,
-                          detail::matrix_storage_row_major_tag,
-                          5,
-                          5>
-        foo;
+    Matrix<double,
+           5,
+           5,
+           MatrixDeaultOptions>
+        a;
 
-    foo.coeffs( 1 ) = 0;
-    //    foo.m_data[0] = 5;
+    a.coeffs( 3, 3 ) = 5;
 
-    Matrix<double, 5, 5> a;
+    cout << a << endl;
 }
