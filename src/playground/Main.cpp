@@ -1,43 +1,33 @@
+#include <iomanip>
 #include <iostream>
 
-//#include <QApplication>
-//#include <QPushButton>
-
-#include <GUI/Application/Application.hpp>
-//#include <GUI/Widgets/GraphicsWindow.hpp>
-
-#include <GUI/Notebook/Notebook.hpp>
 #include <Math/CoreMath.hpp>
-#include <Math/LinearAlgebra/Vec.hpp>
-#include <Plot/Plots/ListPlot.hpp>
+#include <Math/LinearAlgebra/Matrix.hpp>
+//#include <Math/Solvers/RevSimplex.hpp>
 
-//#include <Widgets/Window.hpp>
+#include <Math/LinearAlgebra/MatrixStorage.hpp>
 
-using arc::math::Vec2f;
 using std::cout;
 using std::endl;
 
 using namespace arc;
-using namespace math;
 
-int main( int argc, char* argv[] ) {
+int main( int, char *[] ) {
 
-    gui::Application app( argc, argv );
+    detail::MatrixStorage<double,
+                          5,
+                          5,
+                          0,
+                          size_t,
+                          detail::matrix_storage_static_tag,
+                          detail::matrix_storage_dense_tag,
+                          detail::matrix_storage_dense_tag,
+                          detail::matrix_storage_row_major_tag,
+                          5,
+                          5>
+        foo;
 
-    auto nb = gui::Notebook::make();
-    vector<Vec2f> xy;
-    for( int i = -50; i < 50; i++ ) {
-        const auto x = i * 0.05 * Pi;
-        const auto y = sin( x );
-        Vec2f a( x, y );
-        xy.emplace_back( x, y );
-    }
-    auto p = plot::listPlot( xy );
-    //    auto p2 = plot::listPlot();
-    p->show();
+    //    foo.m_data[0] = 5;
 
-    //    gui::GraphicsWindow* gWindow = new gui::GraphicsWindow();
-    //    gWindow->show();
-
-    return app.exec();
+    Matrix<double, 5, 5> a;
 }

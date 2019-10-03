@@ -41,9 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jacques/repos/jmnel/ArcMath/build/playground/cmake_install.cmake")
   include("/home/jacques/repos/jmnel/ArcMath/build/Core/cmake_install.cmake")
-  include("/home/jacques/repos/jmnel/ArcMath/build/Plot/cmake_install.cmake")
   include("/home/jacques/repos/jmnel/ArcMath/build/Math/cmake_install.cmake")
-  include("/home/jacques/repos/jmnel/ArcMath/build/GUI/cmake_install.cmake")
 
 endif()
 

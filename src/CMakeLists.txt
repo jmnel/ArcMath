@@ -172,9 +172,9 @@ find_package( Boost 1.69 REQUIRED )
 
 add_subdirectory( ${CMAKE_CURRENT_LIST_DIR}/playground )
 add_subdirectory( ${CMAKE_CURRENT_LIST_DIR}/Core )
-add_subdirectory( ${CMAKE_CURRENT_LIST_DIR}/Plot )
+#add_subdirectory( ${CMAKE_CURRENT_LIST_DIR}/Plot )
 add_subdirectory( ${CMAKE_CURRENT_LIST_DIR}/Math )
-add_subdirectory( ${CMAKE_CURRENT_LIST_DIR}/GUI )
+#add_subdirectory( ${CMAKE_CURRENT_LIST_DIR}/GUI )
 #add_subdirectory( ${CMAKE_CURRENT_LIST_DIR}/tests )
 
 if( MSVC )

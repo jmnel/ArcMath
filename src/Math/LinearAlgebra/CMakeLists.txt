@@ -1,6 +1,6 @@
-# -------------------- #
+# ---------------------------- #
 # LinearAlgebra/CMakeLists.txt #
-# -------------------- #
+# ---------------------------- #
 
 set( LinearAlgebra_SRC 
 #    ${CMAKE_CURRENT_LIST_DIR}/Vec.cpp 

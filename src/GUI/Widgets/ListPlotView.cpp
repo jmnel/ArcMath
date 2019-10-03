@@ -21,25 +21,23 @@ namespace arc::gui {
     ListPlotView::ListPlotView( plot::ListPlotModel &model, QWidget *parent ) noexcept
         : m_model( model ),
           QWidget( parent ) {
-        m_title = new QLabel();
+        m_title = new QLabel;
         const auto qString = QString::fromUtf8( model.title().c_str() );
-        m_title->setText( qString );
-        m_title->setSizePolicy( QSizePolicy( QSizePolicy::Minimum, QSizePolicy::Minimum ) );
-        m_title->setAlignment( Qt::AlignHCenter );
 
-        //        const auto w = width();
-        //        const auto h = height();
-        //        setMaximumWidth( 800 );
-        //        setMinimumWidth( 800 );
+        m_title->setText( qString );
+
         QVBoxLayout *mainLayout = new QVBoxLayout;
-        mainLayout->setContentsMargins( 70, 70, 70, 70 );
-        mainLayout->addWidget( m_title );
-        auto topFiller = new QWidget;
-        topFiller->setSizePolicy( QSizePolicy::Expanding, QSizePolicy::Expanding );
-        mainLayout->addWidget( topFiller );
+        mainLayout->setContentsMargins( 10, 10, 10, 10 );
+        mainLayout->addWidget( m_title, 0, Qt::AlignHCenter | Qt::AlignTop );
+        //        mainLayout->addSpacing( 500 );
+        QWidget *mainFiller = new QWidget;
+        //        mainFiller->setSizePolicy( QSizePolicy( QSizePolicy::Expanding, QSizePolicy::Expanding ) );
+        mainLayout->addWidget( mainFiller, 2 );
+
+        cout << "size=" << width() << ", " << height() << endl;
+        cout << "pSize=" << parent->width() << ", " << parent->height() << endl;
 
         setLayout( mainLayout );
-        //        layout->wi
     }
 
     void ListPlotView::paintEvent( QPaintEvent * ) {
@@ -51,6 +49,10 @@ namespace arc::gui {
         pen.setColor( Qt::black );
         pen.setWidth( 5 );
         painter.setPen( pen );
+        //        painter.setBrush( brush );
+
+        //        painter.drawRect( rect() );
+
         //        painter.setBrush( brush );
         //        painter.setFont( QFont( "InputMono", 30 ) );
         //        painter.drawText( rect(), Qt::AlignCenter, "Blue" );
@@ -67,7 +69,8 @@ namespace arc::gui {
         float yOffset;
         QTransform trans;
 
-        const int topHeader = m_title->height() + 100;
+        int margin = 50;
+        const int topHeader = m_title->height() + margin;
         auto const &data = m_model.data();
         for( size_t iPlot = 0; iPlot < data.size(); iPlot++ ) {
             auto const &xy = data[iPlot];
@@ -86,8 +89,6 @@ namespace arc::gui {
 
             xMax = *std::max_element( xList.begin(), xList.end() );
             yMax = *std::max_element( yList.begin(), yList.end() );
-
-            int margin = 50;
 
             xScale = (float)( width() - 2 * margin ) / ( xMax - xMin );
             yScale = (float)( height() - 2 * margin - topHeader ) / ( yMax - yMin );

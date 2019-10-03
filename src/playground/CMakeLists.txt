@@ -1,16 +1,16 @@
 # -- playground - CMakeLists.txt --
 
-include_directories(${Boost_INCLUDE_DIRS})
+#include_directories(${Boost_INCLUDE_DIRS})
 
 #if(${PLATFORM_WIN64})
 #elseif(${PLATFORM_LINUX})
 #    add_executable( playground Main.cpp )
 #endif()
 
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
+#set(CMAKE_AUTOMOC ON)
+#set(CMAKE_AUTORCC ON)
+#set(CMAKE_AUTOUIC ON)
+#set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_executable( playground Main.cpp )
 
@@ -20,16 +20,17 @@ add_executable( playground Main.cpp )
 
 #include_directories( "../arclib" )
 
-target_link_libraries(playground PRIVATE arcgui)
-target_link_libraries(playground PRIVATE arcplot)
+target_link_libraries(playground PRIVATE arcmath)
+#target_link_libraries(playground PRIVATE arcgui)
+#target_link_libraries(playground PRIVATE arcplot)
 
 target_include_directories(playground PRIVATE ${CMAKE_CURRENT_LIST_DIR}/.. )
 
-find_package(Qt5 COMPONENTS Core REQUIRED)
-find_package(Qt5 COMPONENTS Widgets REQUIRED)
+#find_package(Qt5 COMPONENTS Core REQUIRED)
+#find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-target_link_libraries(playground PRIVATE ${Qt5Core_LIBRARIES})
-target_link_libraries(playground PRIVATE ${Qt5Widgets_LIBRARIES})
+#target_link_libraries(playground PRIVATE ${Qt5Core_LIBRARIES})
+#target_link_libraries(playground PRIVATE ${Qt5Widgets_LIBRARIES})
 
 #target_include_directories(playground SYSTEM PUBLIC "C:/usr/local/include/" )
 

@@ -1,11 +1,14 @@
 #pragma once
 
+#include <array>
 #include <iostream>
 
 #include <Core/Debug/Assert.hpp>
 #include <Math/CoreMath.hpp>
 
-namespace arc::math {
+using std::array;
+
+namespace arc {
 
     namespace details {
         template <bool>
@@ -56,24 +59,30 @@ namespace arc::math {
         static_assert( N > 1, "Size of 'n-tuple' must be > 1." );
         Vec() noexcept;
 
-        //        template <class S>
-        Vec( const T k );
+        template <class S>
+        Vec( S k );
         //	for (size_t i = 0; i < N; i++) {
         //		operator[](i) = k;
         //	}
         //}
 
-        //        template <class S>
-        Vec( const T x, const T y );
+        template <class S>
+        Vec( S x, S y );
 
-        //        template <class S>
-        Vec( const T x, const T y, const T z );
+        template <class S>
+        Vec( S x, S y, S z );
 
-        //        template <class S>
-        Vec( const T x, const T y, const T z, const T w );
+        template <class S>
+        Vec( S x, S y, S z, S w );
 
-        //        template <class S>
-        Vec( Vec<T, N> const &v );
+        template <class S>
+        Vec( Vec<S, N> const &v );
+
+        Vec( array<T, N> a ) {
+            for( size_t i = 0; i < N; i++ ) {
+                this->operator[]( i ) = T( a[i] );
+            }
+        }
 
         template <size_t M>
         Vec( Vec<T, M> const &v, T const &s );
@@ -285,6 +294,6 @@ namespace arc::math {
 
         return v / dist;
     }
-}  // namespace arc::math
+}  // namespace arc
 
 #include "Vec.inl"

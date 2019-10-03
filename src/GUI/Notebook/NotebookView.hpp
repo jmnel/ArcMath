@@ -2,13 +2,14 @@
 
 #include <QLabel>
 #include <QLayout>
-#include <QWidget>
+#include <QMainWindow>
+//#include <QWidget>
 
 namespace arc::gui {
 
     class NotebookModel;
 
-    class NotebookView : public QWidget {
+    class NotebookView : public QMainWindow {
     private:
         Q_OBJECT
 
@@ -23,6 +24,8 @@ namespace arc::gui {
         void rebuildWidgets() noexcept;
 
     private slots:
+    private:
+        void setupMenus();
     };
 
 }  // namespace arc::gui

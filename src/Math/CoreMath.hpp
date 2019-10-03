@@ -1,9 +1,5 @@
 #pragma once
 
-//#include <assert.h>
-
-//#include "Mat2x2.hpp"
-
 #define _USE_MATH_DEFINES
 
 #include <algorithm>
@@ -13,9 +9,9 @@
 
 //#include "Fixed.hpp"
 
-namespace arc::math {
+namespace arc {
 
-    //#define CORE_PRECISION_DOUBLE
+#define CORE_PRECISION_DOUBLE
 
 #ifdef CORE_PRECISION_DOUBLE
 
@@ -24,8 +20,7 @@ namespace arc::math {
      *  @brief Real-valued scalar with double precision.
      *
      */
-    typedef double Real;
-    //    typedef int64_t Fixed;
+    using Real = double;
 
 #else
 
@@ -38,7 +33,8 @@ namespace arc::math {
 
 #endif
 
-    using uint = unsigned int;
+    using uint = unsigned int;  /// @todo Remove this in favour of Uint.
+    using Uint = unsigned int;
 
     template <class T>
     double kronecker( T i, T j ) {
@@ -122,4 +118,4 @@ namespace arc::math {
 
     uint nextPowerOf2( uint x );
 
-}  // namespace arc::math
+}  // namespace arc

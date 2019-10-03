@@ -1,5 +1,7 @@
 #include <QLabel>
 #include <QLayout>
+#include <QMenuBar>
+#include <QWindow>
 
 #include <GUI/Notebook/NotebookModel.hpp>
 
@@ -9,45 +11,50 @@ namespace arc::gui {
 
     NotebookView::NotebookView( NotebookModel &model, QWidget *parent ) noexcept
         : m_model( model ),
-          QWidget( parent ) {
-        m_title = new QLabel( "<h1>Notebook 1.1:</h1>" );
-        m_title->setAlignment( Qt::AlignHCenter );
-        m_title->setSizePolicy( QSizePolicy::Minimum, QSizePolicy::Minimum );
+          QMainWindow( parent ) {
 
-        auto mainWidget = new QWidget( this );
+        auto w = new QWidget();
+        w->show();
 
-        //this->setStyleSheet("background-color: yellow;");
-        //    QSizePolicy po;
+        setupMenus();
 
-        QSizePolicy po;
-        po.setHorizontalPolicy( QSizePolicy::Preferred );
-        po.setVerticalPolicy( QSizePolicy::Preferred );
-        po.setVerticalStretch( 1 );
-        po.setHorizontalStretch( 1 );
-
-        this->setSizePolicy( po );
-        mainWidget->setSizePolicy( po );
-
-        //        mainWidget->setSizePolicy( QSizePolicy::Expanding, QSizePolicy::Expanding );
-
-        mainWidget->setMinimumWidth( 1400 );
-        mainWidget->setMinimumHeight( 1000 );
+        //        auto topLayout = new QVBoxLayout;
+        auto centralWidget = new QWidget( this );
+        setCentralWidget( centralWidget );
+        //        topLayout->addWidget( centralWidge
+        m_title = new QLabel( "<h1>Notebook 1.1:</h1>", centralWidget );
         m_layout = new QVBoxLayout;
         m_layout->setContentsMargins( 70, 70, 70, 70 );
-        m_layout->addWidget( m_title );
-        //        m_layout->removeWidget( m_title );
-        mainWidget->setLayout( m_layout );
+        m_layout->addWidget( m_title, 0, Qt::AlignHCenter | Qt::AlignTop );
+        centralWidget->setLayout( m_layout );
     }
 
     void NotebookView::rebuildWidgets() noexcept {
         auto children = m_model.getChildren();
         for( auto c : children ) {
             assert( c->hasView() );
-            m_layout->addWidget( c->getView(), Qt::AlignCenter );
-            c->getView()->setSizePolicy( QSizePolicy::Expanding, QSizePolicy::Expanding );
+            m_layout->addWidget( c->getView(), 2 );
         }
-        //        m_layout->addWidget( m_children.back().
-        //        m_layout->child
+    }
+
+    void NotebookView::setupMenus() {
+        auto fileMenu = menuBar()->addMenu( tr( "&File" ) );
+        fileMenu->addAction( new QAction( "&New" ) );
+        fileMenu->addAction( new QAction( "&Open" ) );
+        fileMenu->addAction( new QAction( "&Close" ) );
+        fileMenu->addSeparator();
+        fileMenu->addAction( new QAction( "&Save" ) );
+        fileMenu->addAction( new QAction( "&Save As" ) );
+        fileMenu->addSeparator();
+        fileMenu->addAction( new QAction( "&Quit" ) );
+
+        auto editMenu = menuBar()->addMenu( tr( "&Edit" ) );
+        auto viewMenu = menuBar()->addMenu( tr( "&View" ) );
+        auto toolsMenu = menuBar()->addMenu( tr( "&Tools" ) );
+        auto optionsMenu = menuBar()->addMenu( tr( "&Options" ) );
+
+        auto helpMenu = menuBar()->addMenu( tr( "&Help" ) );
+        helpMenu->addAction( new QAction( "&About" ) );
     }
 
 }  // namespace arc::gui

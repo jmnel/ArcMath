@@ -60,25 +60,6 @@ rule CXX_STATIC_LIBRARY_LINKER__arclib
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__arcplot
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ccache /usr/lib/llvm/8/bin/clang++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX static library.
-
-rule CXX_STATIC_LIBRARY_LINKER__arcplot
-  command = $PRE_LINK && ccache /usr/bin/cmake -E remove $TARGET_FILE && ccache /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && ccache /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
 rule CXX_COMPILER__arcmath
   depfile = $DEP_FILE
   deps = gcc
@@ -90,25 +71,6 @@ rule CXX_COMPILER__arcmath
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__arcmath
-  command = $PRE_LINK && ccache /usr/bin/cmake -E remove $TARGET_FILE && ccache /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && ccache /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__arcgui
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ccache /usr/lib/llvm/8/bin/clang++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX static library.
-
-rule CXX_STATIC_LIBRARY_LINKER__arcgui
   command = $PRE_LINK && ccache /usr/bin/cmake -E remove $TARGET_FILE && ccache /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && ccache /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT

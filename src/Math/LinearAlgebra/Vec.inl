@@ -1,7 +1,8 @@
 #include <sstream>
 #include <string>
+#include <type_traits>
 
-namespace arc::math {
+namespace arc {
 
     template <class T, size_t N>
     Vec<T, N>::Vec() noexcept {
@@ -11,44 +12,47 @@ namespace arc::math {
     }
 
     template <class T, size_t N>
-    Vec<T, N>::Vec( const T k ) {
+    template <class S>
+    Vec<T, N>::Vec( S k ) {
         for( size_t i = 0; i < N; i++ ) {
-            operator[]( i ) = k;
+            auto a = operator[]( i );
+            static_assert( std::is_same<decltype( a ), T>::value );
+            //            operator[]( i ) = T( k );
         }
     }
 
     template <class T, size_t N>
-    //    template <class S>
-    Vec<T, N>::Vec( const T x, const T y ) {
+    template <class S>
+    Vec<T, N>::Vec( S x, S y ) {
         static_assert( N == 2, "This constructor is reserved for 2-tuples." );
-        this->x = x;
-        this->y = y;
+        this->x = T( x );
+        this->y = T( y );
     }
 
     template <class T, size_t N>
-    //    template <class S>
-    Vec<T, N>::Vec( const T x, const T y, const T z ) {
+    template <class S>
+    Vec<T, N>::Vec( S x, S y, S z ) {
         static_assert( N == 3, "This constructor is reserved for 3-tuples." );
-        this->x = x;
-        this->y = y;
-        this->z = z;
+        this->x = (T)x;
+        this->y = (T)y;
+        this->z = (T)z;
     }
 
     template <class T, size_t N>
-    //    template <class S>
-    Vec<T, N>::Vec( const T x, const T y, const T z, const T w ) {
+    template <class S>
+    Vec<T, N>::Vec( S x, S y, S z, S w ) {
         static_assert( N == 4, "This constructor is reserved for 4-tuples." );
-        this->x = x;
-        this->y = y;
-        this->z = z;
-        this->w = w;
+        this->x = (T)x;
+        this->y = (T)y;
+        this->z = (T)z;
+        this->w = (T)w;
     }
 
     template <class T, size_t N>
-    //    template <class S>
-    Vec<T, N>::Vec( Vec<T, N> const &v ) {
+    template <class S>
+    Vec<T, N>::Vec( Vec<S, N> const &v ) {
         for( size_t i = 0; i < N; i++ ) {
-            this->operator[]( i ) = v[i];
+            this->operator[]( i ) = T( v[i] );
         }
     }
     template <class T, size_t N>
@@ -220,4 +224,4 @@ namespace arc::math {
         return os;
     }
 
-}  // namespace arc::math
+}  // namespace arc

@@ -1,7 +1,7 @@
 #include "CoreMath.hpp"
 
 namespace arc {
-    
+
     uint nextPowerOf2( uint x ) {
         x--;
         x |= x >> 1;
@@ -12,4 +12,4 @@ namespace arc {
         x++;
         return x;
     }
-}
+}  // namespace arc

@@ -19,6 +19,7 @@ target_link_libraries(arcplot ${Qt5Core_LIBRARIES} ${Qt5Widgets_LIBRARIES})
 target_include_directories(arcplot PRIVATE ${CMAKE_CURRENT_LIST_DIR}/.. )
 
 include( ${CMAKE_CURRENT_SOURCE_DIR}/Plots/CMakeLists.txt )
+include( ${CMAKE_CURRENT_SOURCE_DIR}/Graphics/CMakeLists.txt )
 
 
 target_link_libraries( arcplot stdc++fs)
