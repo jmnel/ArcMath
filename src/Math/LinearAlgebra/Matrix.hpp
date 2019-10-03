@@ -37,10 +37,13 @@ namespace arc {
             static constexpr bool value = OptionsT & NamedMemberRefsEnabled;
         };
 
-        template <typename ScalarT, int RowsT, int ColsT, int OptionsT, typename IndexT>
+        template <typename ScalarT,
+                  int RowsT,
+                  int ColsT,
+                  int OptionsT,
+                  typename IndexT,
+                  >
         struct traits<Matrix<ScalarT, RowsT, ColsT, OptionsT, IndexT>> {
-            static_assert( RowsT > 0, "Matrix rows must be > 0." );
-            static_assert( ColsT > 0, "Matrix columns must be > 0." );
 
         private:
             static constexpr int rowMajorBit = OptionsT & RowMajor ? RowMajorBit : 0;

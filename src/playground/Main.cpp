@@ -16,7 +16,7 @@ int main( int, char *[] ) {
 
     detail::MatrixStorage<double,
                           5,
-                          5,
+                          1,
                           0,
                           size_t,
                           detail::matrix_storage_static_tag,
@@ -27,6 +27,7 @@ int main( int, char *[] ) {
                           5>
         foo;
 
+    foo.coeffs( 1 ) = 0;
     //    foo.m_data[0] = 5;
 
     Matrix<double, 5, 5> a;

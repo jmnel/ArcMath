@@ -31,8 +31,8 @@ namespace arc::detail {
 
         typedef ScalarT Scalar;
         typedef IndexT Index;
-        typedef DenseInnerT DesityInner;
-        typedef DenseOuterT DesityOuter;
+        typedef DenseInnerT DensityInner;
+        typedef DenseOuterT DensityOuter;
         typedef StorageOrderT StorageOrder;
         static constexpr Index Rows = RowsT;
         static constexpr Index Cols = ColsT;

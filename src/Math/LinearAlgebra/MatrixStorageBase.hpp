@@ -14,7 +14,14 @@ namespace arc::detail {
               typename MemoryTypeT,
               typename DensityInnerT = get_storage_density<Derived, matrix_inner_tag>,
               typename DensityOuterT = get_storage_density<Derived, matrix_outer_tag>>
-    class MatrixStorageImplementation {};
+    class MatrixStorageImplementation {
+        // Only static memory type is supported.
+        static_assert( std::is_same<MemoryTypeT, matrix_storage_static_tag>::value );
+
+        // Only dense storage is supported.
+        static_assert( std::is_same<DensityInnerT, matrix_storage_dense_tag>::value );
+        static_assert( std::is_same<DensityOuterT, matrix_storage_dense_tag>::value );
+    };
 
     // Dense static storage implementation
     template <typename Derived>
@@ -27,7 +34,7 @@ namespace arc::detail {
         typedef typename traits<Derived>::Index Index;
         static constexpr Index Rows = traits<Derived>::Rows;
         static constexpr Index Cols = traits<Derived>::Cols;
-        array<int, Rows * Cols> m_data{};
+        array<Scalar, Rows * Cols> m_storage{};
 
     private:
     };
@@ -36,7 +43,8 @@ namespace arc::detail {
     class MatrixStorageBase : public MatrixStorageImplementation<Derived,
                                                                  matrix_storage_static_tag,
                                                                  matrix_storage_dense_tag,
-                                                                 matrix_storage_dense_tag> {
+                                                                 matrix_storage_dense_tag>,
+                              public CoeffRefs<Derived> {
     };
 
 };  // namespace arc::detail
