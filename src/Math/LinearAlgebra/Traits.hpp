@@ -29,9 +29,7 @@ namespace arc::detail {
     struct matrix_matrix_type_tag {};
 
     // Remove this.
-    template <typename T,
-              bool isVectorT = ( traits<T>::Rows == 1 && traits<T>::Cols != 1 ) ||
-                               ( traits<T>::Rows != 1 && traits<T>::Cols == 1 )>
+    template <typename T, bool isVectorT = traits<T>::isVectorType()>
     struct get_matrix_type;
 
     template <typename T>
@@ -45,11 +43,11 @@ namespace arc::detail {
     };
 
     // Tests if matrix is vector.
-    template <typename T>
-    struct matrix_is_vector_type {
-        static constexpr bool value = std::is_same<get_matrix_type<T>,
-                                                   matrix_vector_type_tag>::value;
-    };
+    //    template <typename T>
+    //    struct matrix_is_vector_type {
+    //        static constexpr bool value =
+    //            std::is_same<get_matrix_type<T>, matrix_vector_type_tag>::value;
+    //    };
 
     // Get inner or outer matrix storage density.
     template <typename T, typename InnerOrOuterT>
@@ -78,19 +76,20 @@ namespace arc::detail {
     };
 
     // Get if matrix has named members.
-    template <typename T>
-    struct get_named_member_refs_enabled {
-        static constexpr bool value = std::is_same<get_named_member_refs_enabled<T>,
-                                                   matrix_has_named_members_tag>::value;
-    };
+    //    template <typename T>
+    //    struct get_named_member_refs_enabled {
+    //        static constexpr bool value =
+    //            std::is_same<get_named_member_refs_enabled<T>,
+    //            matrix_has_named_members_tag>::value;
+    //    };
 
-    template <typename T>
-    struct isRowMajor;
+    //    template <typename T>
+    //    struct isRowMajor;
 
-    template <typename T, bool _isRowMajor = isRowMajor<T>::value>
-    struct matrix_storage_order {};
+    //    template <typename T, bool isRowMajorT = isRowMajor<T>::value>
+    //    struct matrix_storage_order {};
 
-    template <typename T>
-    struct isVectorType;
+    //    template <typename T>
+    //    struct isVectorType;
 
 }  // namespace arc::detail

@@ -1,32 +1,26 @@
 #pragma once
 
 #include <array>
+#include <iostream>
 
-#include <Math/LinearAlgebra/CoeffRefs.hpp>
+#include <Core/Collections/HeaphArray.hpp>
+//#include <Math/LinearAlgebra/CoeffRefs.hpp>
 #include <Math/LinearAlgebra/ForwardDeclarations.hpp>
 #include <Math/LinearAlgebra/Traits.hpp>
 
 using std::array;
+using std::cout;
+using std::endl;
 
 namespace arc::detail {
 
     template <typename Derived,
-              typename MemoryTypeT = typename traits<Derived>::MemoryType,
-              typename DensityInnerT = typename traits<Derived>::DensityInner,
-              typename DensityOuterT = typename traits<Derived>::DensityOuter>
+              typename MemoryTypeT = typename traits<Derived>::Options::MemoryType,
+              typename InnerDensityT = typename traits<Derived>::Options::InnerDensity,
+              typename OuterDensityT = typename traits<Derived>::Options::OuterDensity>
+    class MatrixStorageImplementation;
 
-    //              typename DensityInnerT = get_storage_density<Derived, matrix_inner_tag>,
-    //              typename DensityOuterT = get_storage_density<Derived, matrix_outer_tag>>
-    class MatrixStorageImplementation {
-        // Only static memory type is supported.
-        static_assert( std::is_same<MemoryTypeT, matrix_storage_static_tag>::value );
-
-        // Only dense storage is supported.
-        static_assert( std::is_same<DensityInnerT, matrix_storage_dense_tag>::value );
-        static_assert( std::is_same<DensityOuterT, matrix_storage_dense_tag>::value );
-    };
-
-    // Dense static storage implementation
+    // -- Statck allocated dense storage implementation --
     template <typename Derived>
     class MatrixStorageImplementation<Derived,
                                       matrix_storage_static_tag,
@@ -34,30 +28,114 @@ namespace arc::detail {
                                       matrix_storage_dense_tag> {
     public:
         typedef typename traits<Derived>::Scalar Scalar;
-        typedef typename traits<Derived>::Index Index;
-        static constexpr Index Rows = traits<Derived>::Rows;
-        static constexpr Index Cols = traits<Derived>::Cols;
-        //        array<Scalar, Rows * Cols> m_storage{};
+        typedef typename traits<Derived>::Options::Index Index;
+
+        static constexpr Index rows() {
+            return traits<Derived>::rows();
+        }
+        static constexpr Index cols() {
+            return traits<Derived>::cols();
+        }
+        static constexpr Index size() {
+            return traits<Derived>::size();
+        }
+
+        array<Scalar, size()> m_storage{};
 
     private:
     };
 
-    template <class Derived>
-    class MatrixStorageBase : public CoeffRefs<Derived> {
+    // -- Dynamic allocated dense storage implementation --
+    template <typename Derived>
+    class MatrixStorageImplementation<Derived,
+                                      matrix_storage_dynamic_tag,
+                                      matrix_storage_dense_tag,
+                                      matrix_storage_dense_tag> {
     public:
         typedef typename traits<Derived>::Scalar Scalar;
-        typedef typename traits<Derived>::Index Index;
-        static constexpr Index Size = traits<Derived>::Size;
-        array<Scalar, Size> m_storage;
+        typedef typename traits<Derived>::Options::Index Index;
+        static constexpr Index rows() {
+            return traits<Derived>::rows();
+        }
+        static constexpr Index cols() {
+            return traits<Derived>::cols();
+        }
+        static constexpr Index size() {
+            return traits<Derived>::size();
+        }
+
+        HeapArray<Scalar, size()> m_storage;
+
+        MatrixStorageImplementation() noexcept {
+            m_storage.fill( 0.0 );
+        }
     };
 
-    //    template <typename Derived>
-    //    class MatrixStorageBase : public MatrixStorageImplementation<Derived,
-    //                                                                 matrix_storage_static_tag,
-    //                                                                 matrix_storage_dense_tag,
-    //                                                                 matrix_storage_dense_tag>,
-    //                              public CoeffRefs<Derived> {
-    //                array<double, 5> m_storage{};
-    //    };
+    // -- Pointer reference dense outer and inner storage implementation --
+    template <typename Derived>
+    class MatrixStorageImplementation<Derived,
+                                      matrix_storage_pointer_ref_tag,
+                                      matrix_storage_dense_tag,
+                                      matrix_storage_dense_tag> {
+    public:
+        typedef typename traits<Derived>::Scalar Scalar;
+        typedef typename traits<Derived>::Options::Index Index;
+
+        static constexpr Index rows() {
+            return traits<Derived>::rows();
+        }
+        static constexpr Index cols() {
+            return traits<Derived>::cols();
+        }
+        static constexpr Index size() {
+            return traits<Derived>::size();
+        }
+
+        static constexpr Index strideInner() {
+            return traits<Derived>::strideInner();
+        }
+        static constexpr Index strideOuter() {
+            return traits<Derived>::strideOuter();
+        }
+        Scalar* m_storage = nullptr;
+
+    private:
+        Scalar* m_start = nullptr;
+
+    public:
+        MatrixStorageImplementation() noexcept {
+        }
+
+        template <typename T>
+        void init1( T* v,
+                    std::enable_if<std::is_same<typename traits<Derived>::Options::MemoryType,
+                                                matrix_storage_pointer_ref_tag>::value>* = 0 ) {
+            assertf( v );
+            m_start = v;
+            m_storage = v;
+            //            cout << "init1" << endl;
+        }
+    };
+
+    // -- MatrixStorageBase class definition --
+    template <class Derived>
+    class MatrixStorageBase : public MatrixStorageImplementation<Derived> {
+    public:
+        typedef typename traits<Derived>::Scalar Scalar;
+        typedef typename traits<Derived>::Options::Index Index;
+
+        static constexpr Index rows() {
+            return traits<Derived>::rows();
+        }
+        static constexpr Index cols() {
+            return traits<Derived>::cols();
+        }
+        static constexpr Index size() {
+            return traits<Derived>::size();
+        }
+
+        MatrixStorageBase() {
+        }
+    };
 
 };  // namespace arc::detail

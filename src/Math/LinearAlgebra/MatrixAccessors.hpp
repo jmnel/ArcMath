@@ -6,12 +6,10 @@
 
 namespace arc::detail {
 
-    enum class MatrixDimension { One,
-                                 Two };
+    enum class MatrixDimension { One, Two };
 
     template <typename Derived, bool hasAccessors, MatrixDimension dimensions>
-    class MatrixAccessors {
-    };
+    class MatrixAccessors {};
 
     template <typename Derived>
     class MatrixAccessors<Derived, true, MatrixDimension::One> {

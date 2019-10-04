@@ -11,8 +11,8 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Arcturus
-# Configuration: Debug
+# Project: ArctMath
+# Configuration: RelWithDebInfo
 # =============================================================================
 
 #############################################
@@ -74,43 +74,43 @@ build playground/rebuild_cache: phony playground/CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_playground: phony || cmake_object_order_depends_target_arcmath
 build playground/CMakeFiles/playground.dir/Main.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/playground/Main.cpp || cmake_object_order_depends_target_playground
   DEP_FILE = playground/CMakeFiles/playground.dir/Main.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir
 build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Arc2d.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp || cmake_object_order_depends_target_playground
   DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Arc2d.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
 build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Circle2d.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp || cmake_object_order_depends_target_playground
   DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Circle2d.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
 build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Line.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp || cmake_object_order_depends_target_playground
   DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Line.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
 build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Plane.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp || cmake_object_order_depends_target_playground
   DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Plane.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
 build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Ray.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp || cmake_object_order_depends_target_playground
   DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Ray.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
 build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Sphere.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp || cmake_object_order_depends_target_playground
   DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Sphere.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
@@ -123,7 +123,7 @@ build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Sphere.cpp.o:
 # Link the executable bin/playground
 
 build bin/playground: CXX_EXECUTABLE_LINKER__playground playground/CMakeFiles/playground.dir/Main.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Arc2d.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Circle2d.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Line.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Plane.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Ray.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Sphere.cpp.o | lib/libarcmath.a || lib/libarcmath.a
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG
   LINK_LIBRARIES = -Wl,-rpath,/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib lib/libarcmath.a
   LINK_PATH = -L/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib
   OBJECT_DIR = playground/CMakeFiles/playground.dir
@@ -166,13 +166,13 @@ build Core/rebuild_cache: phony Core/CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_arclib: phony || Core/CMakeFiles/arclib.dir
 build Core/CMakeFiles/arclib.dir/Utility/Result.cpp.o: CXX_COMPILER__arclib /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/Result.cpp || cmake_object_order_depends_target_arclib
   DEP_FILE = Core/CMakeFiles/arclib.dir/Utility/Result.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Core/.
   OBJECT_DIR = Core/CMakeFiles/arclib.dir
   OBJECT_FILE_DIR = Core/CMakeFiles/arclib.dir/Utility
 build Core/CMakeFiles/arclib.dir/Utility/StringUtility.cpp.o: CXX_COMPILER__arclib /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/StringUtility.cpp || cmake_object_order_depends_target_arclib
   DEP_FILE = Core/CMakeFiles/arclib.dir/Utility/StringUtility.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Core/.
   OBJECT_DIR = Core/CMakeFiles/arclib.dir
   OBJECT_FILE_DIR = Core/CMakeFiles/arclib.dir/Utility
@@ -185,7 +185,7 @@ build Core/CMakeFiles/arclib.dir/Utility/StringUtility.cpp.o: CXX_COMPILER__arcl
 # Link the static library lib/libarclib.a
 
 build lib/libarclib.a: CXX_STATIC_LIBRARY_LINKER__arclib Core/CMakeFiles/arclib.dir/Utility/Result.cpp.o Core/CMakeFiles/arclib.dir/Utility/StringUtility.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g
+  LANGUAGE_COMPILE_FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG
   OBJECT_DIR = Core/CMakeFiles/arclib.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -226,43 +226,43 @@ build Math/rebuild_cache: phony Math/CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_arcmath: phony || Math/CMakeFiles/arcmath.dir
 build Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/CoreMath.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp || cmake_object_order_depends_target_arcmath
   DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o.d
-  FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g    -std=c++17 -std=gnu++17
+  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
@@ -275,7 +275,7 @@ build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o: CXX_COMPILER__ar
 # Link the static library lib/libarcmath.a
 
 build lib/libarcmath.a: CXX_STATIC_LIBRARY_LINKER__arcmath Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -Wpedantic -fsanitize=undefined -fcolor-diagnostics -frtti -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -g
+  LANGUAGE_COMPILE_FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   POST_BUILD = :
   PRE_LINK = :

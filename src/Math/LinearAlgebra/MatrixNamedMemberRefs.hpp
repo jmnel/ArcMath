@@ -11,10 +11,9 @@ namespace arc::detail {
     struct traits;
 
     template <typename Derived,
-              bool hasNamedMemberRefsT = get_named_member_refs_enabled<Derived>::value,
-              size_t SizeT = traits<Derived>::Size>
-    class MatrixNamedMemberRefs {
-    };
+              bool hasNamedMemberRefsT = traits<Derived>::isNamedMamberRefsEnabled(),
+              size_t SizeT = traits<Derived>::size()>
+    class MatrixNamedMemberRefs {};
 
     template <typename Derived>
     class MatrixNamedMemberRefs<Derived, true, 2> {

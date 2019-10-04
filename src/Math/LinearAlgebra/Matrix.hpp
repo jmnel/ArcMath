@@ -15,88 +15,117 @@ namespace arc {
 
     template <typename IndexT,
               typename MemoryTypeT,
-              typename DensityInnerT,
-              typename DensityOuterT,
+              typename InnerDensityT,
+              typename OuterDensityT,
               typename StorageOrderT,
               int StrideInnerT,
               int StrideOuterT,
               typename HasNamedMembersT>
     struct MatrixOptions {
         typedef IndexT Index;
-        typedef DensityInnerT DensityInner;
-        typedef DensityOuterT DensityOuter;
+        typedef MemoryTypeT MemoryType;
+        typedef InnerDensityT InnerDensity;
+        typedef OuterDensityT OuterDensity;
         typedef StorageOrderT StorageOrder;
-        static constexpr Index StrideInner = StrideInnerT;
-        static constexpr Index StrideOuter = StrideOuterT;
         typedef HasNamedMembersT HasNamedMembers;
+
+        static constexpr Index strideInner() {
+            return StrideInnerT;
+        }
+        static constexpr Index strideOuter() {
+            return StrideOuterT;
+        }
     };
 
     namespace detail {
 
-        template <typename ScalarT,
-                  int RowsT,
-                  int ColsT,
-                  typename OptionsT>
-        struct traits<Matrix<ScalarT,
-                             RowsT,
-                             ColsT,
-                             OptionsT>> {
+        // -- Define matrix traits --
+        template <typename ScalarT, int RowsT, int ColsT, typename OptionsT>
+        struct traits<Matrix<ScalarT, RowsT, ColsT, OptionsT>> {
 
         public:
             typedef ScalarT Scalar;
             typedef Matrix<ScalarT, RowsT, ColsT, OptionsT> Derived;
             typedef OptionsT Options;
             typedef typename OptionsT::Index Index;
-            static constexpr Index Rows = RowsT;
-            static constexpr Index Cols = ColsT;
-            static constexpr Index Size = Rows * Cols;
+
+            static constexpr Index rows() {
+                return RowsT;
+            }
+            static constexpr Index cols() {
+                return ColsT;
+            }
+            static constexpr Index size() {
+                return RowsT * ColsT;
+            }
+
+            static constexpr bool isVectorType() {
+                return ( rows() == 1 && cols() != 1 ) || ( rows() != 1 && cols() == 1 );
+            }
+
+            static constexpr bool isNamedMamberRefsEnabled() {
+                return std::is_same_v<typename Options::HasNamedMembers,
+                                      matrix_has_named_members_tag>;
+            }
+
+            static constexpr bool isRowMajor() {
+                return std::is_same_v<typename Options::StorageOrder, matrix_row_major_tag>;
+            }
+
+            static constexpr Index strideInner() {
+                return Options::strideInner();
+            }
+            static constexpr Index strideOuter() {
+                return Options::strideOuter();
+            }
         };
 
         //        template <typename
 
         template <typename T>
         static constexpr void staticAssertVectorSize( const int size ) {
-            static_assert( matrix_is_vector_type<T>::value, "Matrix is not vector." );
-            static_assert( size < traits<T>::Size, "Vector type size assert failed." );
+            static_assert( traits<T>::isVectorType(), "Matrix is not vector." );
+            static_assert( size < traits<T>::size(), "Vector size assert failed." );
         }
 
     }  // namespace detail
 
-    template <typename ScalarT,
-              int RowsT,
-              int ColsT,
-              typename OptionsT>
-    class Matrix : public detail::MatrixBase<Matrix<ScalarT,
-                                                    RowsT,
-                                                    ColsT,
-                                                    OptionsT>> {
+    template <typename ScalarT, int RowsT, int ColsT, typename OptionsT>
+    class Matrix : public detail::MatrixBase<Matrix<ScalarT, RowsT, ColsT, OptionsT>> {
     public:
         typedef ScalarT Scalar;
         typedef detail::MatrixBase<Matrix> Base;
         typedef OptionsT Options;
         typedef typename OptionsT::Index Index;
 
+        static constexpr Index rows() {
+            return RowsT;
+        }
+        static constexpr Index cols() {
+            return ColsT;
+        }
+        static constexpr Index size() {
+            return RowsT * ColsT;
+        }
+
     private:
         template <typename T>
         void init1( T const &x,
-                    typename std::enable_if<
-                        std::is_convertible<T, Scalar>::value,
-                        void>::type * = 0 ) noexcept {
+                    typename std::enable_if<std::is_convertible<T, Scalar>::value, void>::type * =
+                        0 ) noexcept {
             this->m_storage.fill( x );
         }
 
         template <typename T>
         void init1( T const &x,
-                    typename std::enable_if<
-                        std::is_same<T, array<Scalar, detail::traits<Matrix>::Size>>::value,
-                        void>::type * = 0 ) noexcept {
+                    typename std::enable_if<std::is_same_v<T, array<Scalar, size()>>, void>::type
+                        * = 0 ) noexcept {
             std::copy( x.begin(), x.end(), this->m_storage.begin() );
         }
 
     public:
         // -- Default constructor --
-        Matrix() noexcept
-            : Base() {
+        Matrix() noexcept : Base() {
         }
 
         template <typename T>
@@ -106,8 +135,7 @@ namespace arc {
 
         // -- Rvalue references --
         static_assert( std::is_nothrow_move_assignable<Scalar>::value );
-        Matrix( Matrix &&other ) noexcept
-            : Base( std::move( other ) ) {
+        Matrix( Matrix &&other ) noexcept : Base( std::move( other ) ) {
         }
 
         Matrix &operator=( Matrix &&other ) noexcept {

@@ -2,12 +2,12 @@
 BasedOnStyle: Google
 
 AccessModifierOffset: '-4'
-AllowShortFunctionsOnASingleLine: None
-BinPackArguments: 'false'
+AllowShortFunctionsOnASingleLine: All
+BinPackArguments: 'true'
 BinPackParameters: 'false'
 BreakConstructorInitializers: BeforeColon
 ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'
-ColumnLimit: '0'
+ColumnLimit: '100'
 Cpp11BracedListStyle: 'true'
 ExperimentalAutoDetectBinPacking: 'true'
 KeepEmptyLinesAtTheStartOfBlocks: 'true'

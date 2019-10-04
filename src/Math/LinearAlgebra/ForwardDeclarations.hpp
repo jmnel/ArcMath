@@ -9,8 +9,8 @@ namespace arc {
 
     template <typename IndexT,
               typename MemoryTypeT,
-              typename DensityInnerT,
-              typename DensityOuterT,
+              typename InnerDensityT,
+              typename OuterDensityT,
               typename StorageOrderT,
               int StrideInnerT,
               int StrideOuterT,
@@ -27,20 +27,20 @@ namespace arc {
                           detail::matrix_has_named_members_tag>
         MatrixDeaultOptions;
 
-    namespace detail {
+    template <typename ScalarT, int RowsT, int ColsT, typename OptionsT>
+    class MatrixMap;
 
-        template <typename ScalarT, int RowsT, int ColsT, typename IndexT>
-        class MatrixMap;
+    namespace detail {
 
         template <typename Derived>
         class MatrixStorage;
 
+        //        template <typename Derived, typename MatrixTypeT = get_matrix_type<Derived>>
+        //        class MatrixPrinter;
+
     }  // namespace detail
 
-    template <typename ScalarT,
-              int RowsT,
-              int ColsT,
-              typename OptionsT = MatrixDeaultOptions>
+    template <typename ScalarT, int RowsT, int ColsT, typename OptionsT = MatrixDeaultOptions>
     class Matrix;
 
 }  // namespace arc

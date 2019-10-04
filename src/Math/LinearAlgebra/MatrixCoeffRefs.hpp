@@ -10,13 +10,14 @@ namespace arc::detail {
     template <typename Derived,
               bool TisVectorType = isVectorType<Derived>::value,
               typename _storageOrder = typename matrix_storage_order<Derived>::type>
-    class MatrixCoeffRefs {
-    };
+    class MatrixCoeffRefs {};
 
     template <typename Derived>
     class MatrixCoeffRefs<Derived, true, matrix_row_major_tag> {
 
     private:
+        static constexpr Index strideInner = traits<Derived>::strideInner();
+
     public:
         typedef typename traits<Derived>::Scalar Scalar;
         typedef Scalar MatrixCoeffRefsReturnType;
