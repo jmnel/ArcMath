@@ -41,9 +41,7 @@ namespace arc {
             typedef T const* const_pointer;
             typedef std::random_access_iterator_tag iterator_category;
             typedef ptrdiff_t difference_type;
-            iterator( pointer address )
-                : address( address ) {
-            }
+            iterator( pointer address ) : address( address ) {}
 
             self_type operator++() {
                 self_type i = *this;
@@ -77,44 +75,24 @@ namespace arc {
                 return *this;
             }
 
-            reference operator*() {
-                return *address;
-            };
+            reference operator*() { return *address; };
 
-            const_reference operator*() const {
-                return *address;
-            }
+            const_reference operator*() const { return *address; }
 
-            pointer operator->() {
-                return address;
-            };
+            pointer operator->() { return address; };
 
-            const_pointer operator->() const {
-                return address;
-            }
+            const_pointer operator->() const { return address; }
 
-            bool operator<( self_type const& rhs ) {
-                return address < rhs.address;
-            }
+            bool operator<( self_type const& rhs ) { return address < rhs.address; }
 
-            bool operator>( self_type const& rhs ) {
-                return address > rhs.address;
-            }
+            bool operator>( self_type const& rhs ) { return address > rhs.address; }
 
-            bool operator<=( self_type const& rhs ) {
-                return address <= rhs.address;
-            }
-            bool operator>=( self_type const& rhs ) {
-                return address >= rhs.address;
-            }
+            bool operator<=( self_type const& rhs ) { return address <= rhs.address; }
+            bool operator>=( self_type const& rhs ) { return address >= rhs.address; }
 
-            bool operator==( self_type const& rhs ) {
-                return address == rhs.address;
-            }
+            bool operator==( self_type const& rhs ) { return address == rhs.address; }
 
-            bool operator!=( self_type const& rhs ) {
-                return address != rhs.address;
-            }
+            bool operator!=( self_type const& rhs ) { return address != rhs.address; }
 
         private:
             pointer address = nullptr;
@@ -130,9 +108,7 @@ namespace arc {
             typedef T const& const_reference;
             typedef std::random_access_iterator_tag iterator_category;
             typedef ptrdiff_t difference_type;
-            const_iterator( const_pointer address )
-                : address( address ) {
-            }
+            const_iterator( const_pointer address ) : address( address ) {}
 
             self_type operator++() {
                 self_type i = *this;
@@ -166,36 +142,20 @@ namespace arc {
                 return *this;
             }
 
-            const_reference operator*() const {
-                return *address;
-            }
+            const_reference operator*() const { return *address; }
 
-            const_pointer operator->() const {
-                return address;
-            }
+            const_pointer operator->() const { return address; }
 
-            bool operator<( self_type const& rhs ) {
-                return address < rhs.address;
-            }
+            bool operator<( self_type const& rhs ) { return address < rhs.address; }
 
-            bool operator>( self_type const& rhs ) {
-                return address > rhs.address;
-            }
+            bool operator>( self_type const& rhs ) { return address > rhs.address; }
 
-            bool operator<=( self_type const& rhs ) {
-                return address <= rhs.address;
-            }
-            bool operator>=( self_type const& rhs ) {
-                return address >= rhs.address;
-            }
+            bool operator<=( self_type const& rhs ) { return address <= rhs.address; }
+            bool operator>=( self_type const& rhs ) { return address >= rhs.address; }
 
-            bool operator==( self_type const& rhs ) {
-                return address == rhs.address;
-            }
+            bool operator==( self_type const& rhs ) { return address == rhs.address; }
 
-            bool operator!=( self_type const& rhs ) {
-                return address != rhs.address;
-            }
+            bool operator!=( self_type const& rhs ) { return address != rhs.address; }
 
         private:
             pointer address;
@@ -203,9 +163,7 @@ namespace arc {
 
     public:
         // -- Constructors --
-        HeapArray() noexcept {
-            m_storage = new T[N];
-        }
+        HeapArray() noexcept { m_storage = new T[N]; }
 
         void fill( T const& v ) {
             for( auto it = begin(); it != end(); ++it ) {
@@ -291,59 +249,37 @@ namespace arc {
             return m_storage[N - 1];
         }
 
-        const_pointer data() const {
-            return m_storage;
-        }
+        const_pointer data() const { return m_storage; }
 
-        pointer data() {
-            return m_storage;
-        }
+        pointer data() { return m_storage; }
 
         // -- Standard iterators --
-        iterator begin() {
-            return iterator{&m_storage[0]};
-        }
+        iterator begin() { return iterator{&m_storage[0]}; }
 
-        const_iterator cbegin() {
-            return const_iterator{&m_storage[0]};
-        }
+        const_iterator cbegin() { return const_iterator{&m_storage[0]}; }
 
-        iterator end() {
-            return iterator{&m_storage[N]};
-        }
+        iterator end() { return iterator{&m_storage[N]}; }
 
-        const_iterator cend() {
-            return const_iterator{&m_storage[N]};
-        }
+        const_iterator cend() { return const_iterator{&m_storage[N]}; }
 
         // -- Reverse iterators --
-        reverse_iterator rbegin() {
-            return reverse_iterator( iterator{&m_storage[N - 1]} );
-        }
+        reverse_iterator rbegin() { return reverse_iterator( iterator{&m_storage[N - 1]} ); }
 
         const_reverse_iterator crbegin() {
             return const_reverse_iterator( const_iterator{&m_storage[N - 1]} );
         }
 
-        reverse_iterator rend() {
-            return reverse_iterator( iterator{&m_storage[0] - 1} );
-        }
+        reverse_iterator rend() { return reverse_iterator( iterator{&m_storage[0] - 1} ); }
 
         const_reverse_iterator crend() {
             return reverse_iterator( const_iterator{&m_storage[0] - 1} );
         }
 
-        bool empty() const {
-            return N == 0;
-        }
+        bool empty() const { return N == 0; }
 
-        size_t size() const {
-            return N;
-        }
+        size_t size() const { return N; }
 
-        void swap( HeapArray& other ) {
-            std::swap( m_storage, other.m_storage );
-        }
+        void swap( HeapArray& other ) { std::swap( m_storage, other.m_storage ); }
 
     };  // namespace arc
 

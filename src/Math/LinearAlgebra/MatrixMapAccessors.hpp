@@ -29,6 +29,7 @@ namespace arc::detail {
         static constexpr Index cols() { return traits<Derived>::cols(); };
         static constexpr Index strideOuter() { return traits<Derived>::Options::strideOuter(); };
         static constexpr Index strideInner() { return traits<Derived>::Options::strideInner(); };
+
         template <Index N, Index MinT, Index MaxT, typename TypeT = Index>
         struct in_range {
             static_assert( N >= MinT && N <= MaxT, "in_range assert failed." );

@@ -18,18 +18,16 @@ using Index = size_t;
 
 int main( int, char *[] ) {
 
-    Matrix<double, 5, 5> a;
+    static_assert( std::is_same<detail::get_traits_t<Matrix<double, 2, 2>>::Options,
+                                MatrixDefaultOptions>::value );
 
-    assertf( !detail::traits<decltype( a )>::isVectorType() );
+    //    static_assert( detail::traits<Matrix<double, 2, 2>>::isRowMajor() );
+    //    assertf( detail::get_traits_t<decltype( a )>::isRowMajor() );
+    //        {{0, 1}, {1, 0}};
+    //    Matrix<double, 2, 2> b{{1, 2}, {3, 4}};
 
-    //    typedef int Index;
-
-    for( int i = 0; i < 5; ++i ) {
-        for( int j = 0; j < 5; ++j ) {
-            a.coeffs( i, j ) = double( i * 5 + j );
-        }
-    }
-    cout << "a=" << endl << a << endl;
-
-    cout << a.subCol<3>( 4, 2 ) << endl;
+    //    cout << "a=" << endl;
+    //    cout << a << endl;
+    //    cout << "b=" << endl;
+    //    cout << b << endl;
 }

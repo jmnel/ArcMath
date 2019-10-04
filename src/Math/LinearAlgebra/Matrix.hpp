@@ -2,14 +2,18 @@
 
 #include <array>
 #include <iostream>
+#include <typeinfo>
 
 #include <Math/LinearAlgebra/Constants.hpp>
 #include <Math/LinearAlgebra/ForwardDeclarations.hpp>
 #include <Math/LinearAlgebra/MatrixBase.hpp>
+#include <Math/LinearAlgebra/MatrixBinaryOperators.hpp>
 
 using std::array;
 using std::cout;
 using std::endl;
+using std::remove_const_t;
+using std::remove_reference_t;
 
 namespace arc {
 
@@ -29,12 +33,8 @@ namespace arc {
         typedef StorageOrderT StorageOrder;
         typedef HasNamedMembersT HasNamedMembers;
 
-        static constexpr Index strideInner() {
-            return StrideInnerT;
-        }
-        static constexpr Index strideOuter() {
-            return StrideOuterT;
-        }
+        static constexpr Index strideInner() { return StrideInnerT; }
+        static constexpr Index strideOuter() { return StrideOuterT; }
     };
 
     namespace detail {
@@ -49,15 +49,9 @@ namespace arc {
             typedef OptionsT Options;
             typedef typename OptionsT::Index Index;
 
-            static constexpr Index rows() {
-                return RowsT;
-            }
-            static constexpr Index cols() {
-                return ColsT;
-            }
-            static constexpr Index size() {
-                return RowsT * ColsT;
-            }
+            static constexpr Index rows() { return RowsT; }
+            static constexpr Index cols() { return ColsT; }
+            static constexpr Index size() { return RowsT * ColsT; }
 
             static constexpr bool isVectorType() {
                 return ( rows() == 1 && cols() != 1 ) || ( rows() != 1 && cols() == 1 );
@@ -69,15 +63,14 @@ namespace arc {
             }
 
             static constexpr bool isRowMajor() {
-                return std::is_same_v<typename Options::StorageOrder, matrix_row_major_tag>;
+
+                static_assert( std::is_same<typename Options::StorageOrder,
+                                            matrix_storage_row_major_tag>::value );
+                return std::is_same<typename Options::StorageOrder, matrix_row_major_tag>::value;
             }
 
-            static constexpr Index strideInner() {
-                return Options::strideInner();
-            }
-            static constexpr Index strideOuter() {
-                return Options::strideOuter();
-            }
+            static constexpr Index strideInner() { return Options::strideInner(); }
+            static constexpr Index strideOuter() { return Options::strideOuter(); }
         };
 
         //        template <typename
@@ -98,15 +91,9 @@ namespace arc {
         typedef OptionsT Options;
         typedef typename OptionsT::Index Index;
 
-        static constexpr Index rows() {
-            return RowsT;
-        }
-        static constexpr Index cols() {
-            return ColsT;
-        }
-        static constexpr Index size() {
-            return RowsT * ColsT;
-        }
+        static constexpr Index rows() { return RowsT; }
+        static constexpr Index cols() { return ColsT; }
+        static constexpr Index size() { return RowsT * ColsT; }
 
     private:
         template <typename T>
@@ -125,8 +112,7 @@ namespace arc {
 
     public:
         // -- Default constructor --
-        Matrix() noexcept : Base() {
-        }
+        Matrix() noexcept : Base() {}
 
         template <typename T>
         explicit Matrix( T const &x ) noexcept {
@@ -135,8 +121,7 @@ namespace arc {
 
         // -- Rvalue references --
         static_assert( std::is_nothrow_move_assignable<Scalar>::value );
-        Matrix( Matrix &&other ) noexcept : Base( std::move( other ) ) {
-        }
+        Matrix( Matrix &&other ) noexcept : Base( std::move( other ) ) {}
 
         Matrix &operator=( Matrix &&other ) noexcept {
             other.swap( *this );
@@ -150,13 +135,11 @@ namespace arc {
                 const Scalar a2,
                 const Scalar a3,
                 const ArgTypes... args )
-            : Base( a0, a1, a2, a3, args... ) {
-        }
+            : Base( a0, a1, a2, a3, args... ) {}
 
         // -- Initializer list constructor --
         explicit Matrix( std::initializer_list<std::initializer_list<Scalar>> const &list )
-            : Base( list ) {
-        }
+            : Base( list ) {}
     };
 
 }  // namespace arc

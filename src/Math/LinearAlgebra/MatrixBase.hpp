@@ -28,20 +28,15 @@ namespace arc::detail {
                        public MatrixMapAccessors<Derived>,
                        public CoeffRefs<Derived>,
                        public MatrixPrinter<Derived> {
+
     public:
         typedef typename traits<Derived>::Scalar Scalar;
         typedef typename traits<Derived>::Index Index;
         //        typedef MatrixStorage<Derived> Storage;
 
-        static constexpr Index rows() {
-            return traits<Derived>::rows();
-        };
-        static constexpr Index cols() {
-            return traits<Derived>::cols();
-        };
-        static constexpr Index size() {
-            return traits<Derived>::size();
-        };
+        static constexpr Index rows() { return traits<Derived>::rows(); };
+        static constexpr Index cols() { return traits<Derived>::cols(); };
+        static constexpr Index size() { return traits<Derived>::size(); };
 
         inline static constexpr void checkTemplateParams() {
             static_assert( rows() > 0, "Matrix rows must be > 0." );
@@ -50,9 +45,7 @@ namespace arc::detail {
         }
 
     public:
-        MatrixBase() noexcept {
-            checkTemplateParams();
-        }
+        MatrixBase() noexcept { checkTemplateParams(); }
 
         [[deprecated]] explicit MatrixBase(
             std::initializer_list<std::initializer_list<Scalar>> const& list ) {

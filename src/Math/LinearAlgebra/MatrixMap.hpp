@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Math/LinearAlgebra/ForwardDeclarations.hpp>
+#include <Math/LinearAlgebra/MatrixBinaryOperators.hpp>
 #include <Math/LinearAlgebra/MatrixMapBase.hpp>
 
 namespace arc {
@@ -15,23 +16,13 @@ namespace arc {
             typedef OptionsT Options;
             typedef typename OptionsT::Index Index;
 
-            static constexpr Index rows() {
-                return RowsT;
-            }
-            static constexpr Index cols() {
-                return ColsT;
-            }
-            static constexpr Index size() {
-                return RowsT * ColsT;
-            }
+            static constexpr Index rows() { return RowsT; }
+            static constexpr Index cols() { return ColsT; }
+            static constexpr Index size() { return RowsT * ColsT; }
 
-            static constexpr Index strideInner() {
-                return Options::strideInner();
-            }
+            static constexpr Index strideInner() { return Options::strideInner(); }
 
-            static constexpr Index strideOuter() {
-                return Options::strideOuter();
-            }
+            static constexpr Index strideOuter() { return Options::strideOuter(); }
 
             static constexpr bool isVectorType() {
                 return ( rows() == 1 && cols() != 1 ) || ( rows() != 1 && cols() == 1 );
@@ -66,24 +57,14 @@ namespace arc {
             assertf( startPointer );
         }
 
-        static constexpr Index size() {
-            return rows() * cols();
-        }
+        static constexpr Index size() { return rows() * cols(); }
 
-        static constexpr Index rows() {
-            return RowsT;
-        }
-        static constexpr Index cols() {
-            return ColsT;
-        }
+        static constexpr Index rows() { return RowsT; }
+        static constexpr Index cols() { return ColsT; }
 
-        static constexpr Index strideInner() {
-            return Options::strideInner();
-        }
+        static constexpr Index strideInner() { return Options::strideInner(); }
 
-        static constexpr Index strideOuter() {
-            return Options::strideOuter();
-        }
+        static constexpr Index strideOuter() { return Options::strideOuter(); }
     };
 
 }  // namespace arc

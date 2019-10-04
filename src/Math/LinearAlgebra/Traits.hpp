@@ -2,13 +2,26 @@
 
 #include <type_traits>
 
+using std::remove_const_t;
+using std::remove_reference_t;
+
 namespace arc::detail {
+
+    enum class MatrixStorageOrder { RowMajor, RowMinor };
 
     template <typename T>
     struct traits;
 
     template <typename T>
     struct traits<const T> : traits<T> {};
+
+    template <typename T>
+    struct get_traits {
+        using type = traits<remove_reference_t<remove_const_t<T>>>;
+    };
+
+    template <typename T>
+    using get_traits_t = typename get_traits<T>::type;
 
     // -- Trait tags --
     struct matrix_row_major_tag {};  /// @todo remove this

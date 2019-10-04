@@ -25,7 +25,7 @@ namespace arc {
                           1,
                           1,
                           detail::matrix_has_named_members_tag>
-        MatrixDeaultOptions;
+        MatrixDefaultOptions;
 
     template <typename ScalarT, int RowsT, int ColsT, typename OptionsT>
     class MatrixMap;
@@ -40,7 +40,7 @@ namespace arc {
 
     }  // namespace detail
 
-    template <typename ScalarT, int RowsT, int ColsT, typename OptionsT = MatrixDeaultOptions>
+    template <typename ScalarT, int RowsT, int ColsT, typename OptionsT = MatrixDefaultOptions>
     class Matrix;
 
 }  // namespace arc
