@@ -10,7 +10,7 @@
 
 using std::endl;
 
-namespace arc::matrix::detail {
+namespace jmnel::matrix::detail {
 
     template <typename Derived>
     class Printable {
@@ -29,7 +29,7 @@ namespace arc::matrix::detail {
                 static constexpr size_t rows = traits<Derived>::rows;
                 static constexpr size_t cols = traits<Derived>::cols;
                 for( size_t i = 0; i < rows; ++i ) {
-                    ss << "( " << static_cast<Derived const *>( this )->coeffs( 0, i );
+                    ss << "( " << static_cast<Derived const *>( this )->coeffs( i, 0 );
                     for( size_t j = 1; j < cols; ++j ) {
                         ss << ", " << static_cast<Derived const *>( this )->coeffs( i, j );
                     }
@@ -47,4 +47,4 @@ namespace arc::matrix::detail {
         return os;
     }
 
-}  // namespace arc::matrix::detail
+}  // namespace jmnel::matrix::detail

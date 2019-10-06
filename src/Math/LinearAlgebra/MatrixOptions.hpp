@@ -4,24 +4,32 @@
 
 #include "Common.hpp"
 
-namespace arc::matrix {
+namespace jmnel::matrix {
 
-    template <MatrixStorageType storageTypeT = MatrixStorageType::Static,
-              MatrixStorageOrder storageOrderT = MatrixStorageOrder::RowMajor,
-              MatrixDensity innerDensityT = MatrixDensity::Dense,
-              MatrixDensity outerDensityT = MatrixDensity::Dense,
-              size_t innerStrideT = 1,
-              size_t outerStrideT = 1,
-              bool hasNamedMembersT = true>
+    template <MatrixStorageType storageTypeT,
+              MatrixStorageOrder storageOrderT,
+              MatrixDensity innerDensityT,
+              MatrixDensity outerDensityT,
+              ptrdiff_t innerStrideT,
+              ptrdiff_t outerStrideT,
+              bool hasNamedMembersT>
     class MatrixOptions {
     public:
         static constexpr MatrixStorageType storageType = storageTypeT;
         static constexpr MatrixStorageOrder storageOrder = storageOrderT;
         static constexpr MatrixDensity innerDensity = innerDensityT;
         static constexpr MatrixDensity outerDensity = outerDensityT;
-        static constexpr size_t innerStride = innerStrideT;
-        static constexpr size_t outerStride = outerStrideT;
+        static constexpr ptrdiff_t innerStride = innerStrideT;
+        static constexpr ptrdiff_t outerStride = outerStrideT;
         static constexpr bool hasNamedMembers = hasNamedMembersT;
     };
 
-}  // namespace arc::matrix
+    using MatrixOptionsDefault = MatrixOptions<MatrixStorageType::Static,
+                                               MatrixStorageOrder::RowMajor,
+                                               MatrixDensity::Dense,
+                                               MatrixDensity::Dense,
+                                               1,
+                                               1,
+                                               true>;
+
+}  // namespace jmnel::matrix

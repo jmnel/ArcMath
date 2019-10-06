@@ -18,9 +18,9 @@ namespace jmnel::matrix::detail {
     class MapAccessor<Derived, MatrixDimension::One, MatrixDensity::Dense, MatrixDensity::Dense> {
     private:
         using Scalar = typename traits<Derived>::Scalar;
-        static constexpr size_t baseSize = traits<Derived>::size;
-        static constexpr size_t baseInnerStride = traits<Derived>::innerStride;
-        static constexpr size_t baseOuterStride = traits<Derived>::outerStride;
+        static constexpr auto baseSize = traits<Derived>::size;
+        static constexpr auto baseInnerStride = traits<Derived>::innerStride;
+        static constexpr auto baseOuterStride = traits<Derived>::outerStride;
         static constexpr bool baseHasNamedMembers = traits<Derived>::hasNamedMembers;
 
     public:
@@ -46,11 +46,11 @@ namespace jmnel::matrix::detail {
     class MapAccessor<Derived, MatrixDimension::Two, MatrixDensity::Dense, MatrixDensity::Dense> {
     private:
         using Scalar = typename traits<Derived>::Scalar;
-        static constexpr size_t baseRows = traits<Derived>::rows;
-        static constexpr size_t baseCols = traits<Derived>::cols;
+        static constexpr auto baseRows = traits<Derived>::rows;
+        static constexpr auto baseCols = traits<Derived>::cols;
         static constexpr size_t baseSize = traits<Derived>::size;
-        static constexpr size_t baseInnerStride = traits<Derived>::innerStride;
-        static constexpr size_t baseOuterStride = traits<Derived>::outerStride;
+        static constexpr auto baseInnerStride = traits<Derived>::innerStride;
+        static constexpr auto baseOuterStride = traits<Derived>::outerStride;
         static constexpr bool baseHasNamedMembers = traits<Derived>::hasNamedMembers;
         static constexpr MatrixStorageOrder baseStorageOrder = traits<Derived>::storageOrder;
 
@@ -67,7 +67,7 @@ namespace jmnel::matrix::detail {
                                                     baseOuterStride * baseCols,  // Doesn't matter
                                                     baseHasNamedMembers>;
                 return Matrix<Scalar, 1, baseCols, ReturnOptions>(
-                    &( static_cast<Derived*>( this )->coeffs( i, 1 ) ) );
+                    &( static_cast<Derived*>( this )->coeffs( i, 0 ) ) );
             }
         }
 
@@ -75,15 +75,55 @@ namespace jmnel::matrix::detail {
             assertf( j <= baseCols );
 
             if constexpr( baseStorageOrder == MatrixStorageOrder::RowMajor ) {
+                using ReturnOptions = MatrixOptions<
+                    MatrixStorageType::PointerReference,
+                    MatrixStorageOrder::RowMajor,
+                    MatrixDensity::Dense,
+                    MatrixDensity::Dense,
+                    1 * baseCols,
+                    1,
+                    //                                                    baseOuterStride *
+                    //                                                    baseRows, baseInnerStride,
+                    //                                                    // Doesn't matter
+                    baseHasNamedMembers>;
+                return Matrix<Scalar, 1, baseRows, ReturnOptions>(
+                    &( static_cast<Derived*>( this )->coeffs( 0, j ) ) );
+            }
+        }
+
+        auto row( const size_t i ) const {
+            assertf( i <= baseRows );
+
+            if constexpr( baseStorageOrder == MatrixStorageOrder::RowMajor ) {
                 using ReturnOptions = MatrixOptions<MatrixStorageType::PointerReference,
                                                     MatrixStorageOrder::RowMajor,
                                                     MatrixDensity::Dense,
                                                     MatrixDensity::Dense,
-                                                    baseOuterStride * baseRows,
-                                                    baseInnerStride,  // Doesn't matter
+                                                    baseInnerStride,
+                                                    baseOuterStride * baseCols,  // Doesn't matter
                                                     baseHasNamedMembers>;
                 return Matrix<Scalar, 1, baseCols, ReturnOptions>(
-                    &( static_cast<Derived*>( this )->coeffs( 1, j ) ) );
+                    &( static_cast<const Derived*>( this )->coeffs( i, 1 ) ) );
+            }
+        }
+
+        auto col( const size_t j ) const {
+            assertf( j <= baseCols );
+
+            if constexpr( baseStorageOrder == MatrixStorageOrder::RowMajor ) {
+                using ReturnOptions = MatrixOptions<
+                    MatrixStorageType::PointerReference,
+                    MatrixStorageOrder::RowMajor,
+                    MatrixDensity::Dense,
+                    MatrixDensity::Dense,
+                    baseInnerStride * baseCols,
+                    1,
+                    //                                                    baseOuterStride *
+                    //                                                    baseRows, baseInnerStride,
+                    //                                                    // Doesn't matter
+                    baseHasNamedMembers>;
+                return Matrix<Scalar, 1, baseRows, ReturnOptions>(
+                    &( static_cast<const Derived*>( this )->coeffs( 1, j ) ) );
             }
         }
     };

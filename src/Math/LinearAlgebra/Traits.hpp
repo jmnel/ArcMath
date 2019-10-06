@@ -23,8 +23,8 @@ namespace jmnel::matrix::detail {
         static constexpr MatrixStorageOrder storageOrder = Options::storageOrder;
         static constexpr MatrixDensity innerDensity = Options::innerDensity;
         static constexpr MatrixDensity outerDensity = Options::outerDensity;
-        static constexpr size_t innerStride = Options::innerStride;
-        static constexpr size_t outerStride = Options::outerStride;
+        static constexpr ptrdiff_t innerStride = Options::innerStride;
+        static constexpr ptrdiff_t outerStride = Options::outerStride;
         static constexpr bool hasNamedMembers = Options::hasNamedMembers;
 
         static constexpr bool isVectorType() {

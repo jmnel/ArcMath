@@ -2,7 +2,7 @@
 
 #include "Traits.hpp"
 
-namespace arc::matrix::detail {
+namespace jmnel::matrix::detail {
 
     template <typename Derived,
               size_t sizeT = traits<Derived>::size,
@@ -42,4 +42,4 @@ namespace arc::matrix::detail {
         Scalar& w = static_cast<Derived>( this )->at( 3 );
     };
 
-}  // namespace arc::matrix::detail
+}  // namespace jmnel::matrix::detail

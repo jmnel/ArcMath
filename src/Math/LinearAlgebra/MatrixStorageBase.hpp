@@ -59,6 +59,11 @@ namespace jmnel::matrix::detail {
             m_storage = x;
         }
 
+        void initStorage( const Scalar *const x ) {
+            assertf( x );
+            m_storage = x;
+        }
+
     public:
         MatrixStorageBase() noexcept {};
 

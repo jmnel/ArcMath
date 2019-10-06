@@ -1,8 +1,10 @@
 #include <ostream>
 #pragma once
 
+#include "BinaryOperators.hpp"
 #include "CoefReffs.hpp"
 #include "MapAccessor.hpp"
+#include "MatrixIteratorAccess.hpp"
 #include "MatrixStorage.hpp"
 #include "Printable.hpp"
 
@@ -12,7 +14,8 @@ namespace jmnel::matrix::detail {
     class MatrixBase : public MatrixStorage<Derived>,
                        public MapAccessor<Derived>,
                        public CoefReffs<Derived>,
-                       public Printable<Derived> {
+                       public Printable<Derived>,
+                       public IteratorAccess<Derived> {
     private:
         using Scalar = typename traits<Derived>::Scalar;
 
