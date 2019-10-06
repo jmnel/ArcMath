@@ -8,7 +8,7 @@
 
 using std::array;
 
-namespace arc {
+namespace jmnel {
 
     namespace details {
         template <bool>

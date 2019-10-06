@@ -1,24 +1,20 @@
 #pragma once
 
-#include <Math/LinearAlgebra/CoeffRefs.hpp>
-#include <Math/LinearAlgebra/MatrixPrinter.hpp>
-#include <Math/LinearAlgebra/MatrixStorage.hpp>
+#include "CoefReffs.hpp"
+#include "MapAccessor.hpp"
+#include "MatrixStorage.hpp"
 
-namespace arc::detail {
+namespace arc::matrix::detail {
 
-    template <typename Derived>
+    template <class Derived>
     class MatrixMapBase : public MatrixStorage<Derived>,
-                          public CoeffRefs<Derived>,
-                          public MatrixPrinter<Derived> {
-    public:
-        typedef MatrixStorage<Derived> Storage;
-        typedef typename traits<Derived>::Scalar Scalar;
-
+                          public MapAccessor<Derived>,
+                          public CoefReffs<Derived> {
     private:
+        using Scalar = typename traits<Derived>::Scalar;
+
     public:
-        explicit MatrixMapBase( Scalar* startPointer ) {
-            static_cast<Storage*>( this )->init1( startPointer );
-        }
+        MatrixMapBase( Scalar* xPointer ) noexcept;
     };
 
-}  // namespace arc::detail
+}  // namespace arc::matrix::detail

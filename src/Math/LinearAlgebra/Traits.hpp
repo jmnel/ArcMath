@@ -1,108 +1,41 @@
 #pragma once
 
-#include <type_traits>
+#include <cstddef>
 
-using std::remove_const_t;
-using std::remove_reference_t;
+#include "Common.hpp"
+#include "ForwardDeclare.hpp"
 
-namespace arc::detail {
-
-    enum class MatrixStorageOrder { RowMajor, RowMinor };
+namespace jmnel::matrix::detail {
 
     template <typename T>
     struct traits;
 
-    template <typename T>
-    struct traits<const T> : traits<T> {};
+    template <typename ScalarT, size_t rowsT, size_t colsT, typename OptionsT>
+    struct traits<Matrix<ScalarT, rowsT, colsT, OptionsT>> {
+        using Scalar = ScalarT;
+        static constexpr size_t rows = rowsT;
+        static constexpr size_t cols = colsT;
+        static constexpr size_t size = rows * cols;
 
-    template <typename T>
-    struct get_traits {
-        using type = traits<remove_reference_t<remove_const_t<T>>>;
+        using Options = OptionsT;
+
+        static constexpr MatrixStorageType storageType = Options::storageType;
+        static constexpr MatrixStorageOrder storageOrder = Options::storageOrder;
+        static constexpr MatrixDensity innerDensity = Options::innerDensity;
+        static constexpr MatrixDensity outerDensity = Options::outerDensity;
+        static constexpr size_t innerStride = Options::innerStride;
+        static constexpr size_t outerStride = Options::outerStride;
+        static constexpr bool hasNamedMembers = Options::hasNamedMembers;
+
+        static constexpr bool isVectorType() {
+            return ( rows == 1 && cols != 1 ) || ( rows != 1 && cols == 1 );
+        }
+
+        static constexpr MatrixDimension dimension =
+            isVectorType() ? MatrixDimension::One : MatrixDimension::Two;
+
+        static constexpr bool isRowMajor() { return storageOrder == MatrixStorageOrder::RowMajor; }
+        static constexpr bool isColMajor() { return storageOrder == MatrixStorageOrder::ColMajor; }
     };
 
-    template <typename T>
-    using get_traits_t = typename get_traits<T>::type;
-
-    // -- Trait tags --
-    struct matrix_row_major_tag {};  /// @todo remove this
-    struct matrix_col_major_tag {};  /// @todo remove this
-
-    struct matrix_storage_row_major_tag {};
-    struct matrix_storage_col_major_tag {};
-    struct matrix_storage_static_tag {};
-    struct matrix_storage_dynamic_tag {};
-    struct matrix_storage_pointer_ref_tag {};
-    struct matrix_storage_dense_tag {};
-    struct matrix_storage_sparse_tag {};
-    struct matrix_inner_tag {};
-    struct matrix_outer_tag {};
-    struct matrix_has_named_members_tag {};
-
-    struct matrix_vector_type_tag {};
-    struct matrix_matrix_type_tag {};
-
-    // Remove this.
-    template <typename T, bool isVectorT = traits<T>::isVectorType()>
-    struct get_matrix_type;
-
-    template <typename T>
-    struct get_matrix_type<T, true> {
-        typedef matrix_vector_type_tag type;
-    };
-
-    template <typename T>
-    struct get_matrix_type<T, false> {
-        typedef matrix_matrix_type_tag type;
-    };
-
-    // Tests if matrix is vector.
-    //    template <typename T>
-    //    struct matrix_is_vector_type {
-    //        static constexpr bool value =
-    //            std::is_same<get_matrix_type<T>, matrix_vector_type_tag>::value;
-    //    };
-
-    // Get inner or outer matrix storage density.
-    template <typename T, typename InnerOrOuterT>
-    struct get_storage_density;
-
-    template <typename T>
-    struct get_storage_density<T, matrix_inner_tag> {
-        typedef typename traits<T>::Options::DensityInner type;
-    };
-
-    template <typename T>
-    struct get_storage_density<T, matrix_outer_tag> {
-        typedef typename traits<T>::Options::DensityOuter type;
-    };
-
-    // Get matrix storage memory implementation type.
-    template <typename T>
-    struct get_storage_type {
-        typedef typename traits<T>::Options::MemoryType type;
-    };
-
-    // Get matrix storage order.
-    template <typename T>
-    struct get_storage_order {
-        typedef typename traits<T>::Options::StorageOrder type;
-    };
-
-    // Get if matrix has named members.
-    //    template <typename T>
-    //    struct get_named_member_refs_enabled {
-    //        static constexpr bool value =
-    //            std::is_same<get_named_member_refs_enabled<T>,
-    //            matrix_has_named_members_tag>::value;
-    //    };
-
-    //    template <typename T>
-    //    struct isRowMajor;
-
-    //    template <typename T, bool isRowMajorT = isRowMajor<T>::value>
-    //    struct matrix_storage_order {};
-
-    //    template <typename T>
-    //    struct isVectorType;
-
-}  // namespace arc::detail
+}  // namespace jmnel::matrix::detail

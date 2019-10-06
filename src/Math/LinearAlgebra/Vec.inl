@@ -2,7 +2,7 @@
 #include <string>
 #include <type_traits>
 
-namespace arc {
+namespace jmnel {
 
     template <class T, size_t N>
     Vec<T, N>::Vec() noexcept {
