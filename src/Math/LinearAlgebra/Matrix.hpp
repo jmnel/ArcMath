@@ -6,6 +6,7 @@
 #include <type_traits>
 #include <utility>
 
+#include "BinaryOperators.hpp"
 #include "Common.hpp"
 #include "MatrixBase.hpp"
 #include "MatrixOptions.hpp"
@@ -28,6 +29,7 @@ namespace jmnel::matrix {
         static constexpr auto cols = colsT;
         static constexpr auto size = rowsT * colsT;
         static constexpr auto dimension = detail::traits<SelfType>::dimension;
+        static constexpr bool isVectorType = detail::traits<SelfType>::isVectorType;
 
         template <typename T>
         void init1( T const& x,
@@ -37,10 +39,34 @@ namespace jmnel::matrix {
 
         template <typename T>
         void init1(
-            T const& x,
+            T const x,
             typename std::enable_if_t<std::is_same_v<T, array<Scalar, size>>>* = 0 ) noexcept {
-            assertf( false );
-            //            std::copy( x.begin(), x.end(), this->
+            //            auto it = x.begin();
+            //            for( itElem = this->beginElement();
+            //            assertf( false );
+            std::copy( x.begin(), x.end(), this->beginElement() );
+        }
+
+        template <typename T>
+        void init1(
+            T const x,
+            typename std::enable_if_t<std::is_same_v<T, array<array<Scalar, cols>, rows>>>* =
+                0 ) noexcept {
+            //            static_assert( !isVectorType );
+            if constexpr( detail::traits<SelfType>::isVectorType() ) {
+                for( size_t k = 0; k < size; ++k ) {
+                    auto i = ( k / cols );
+                    auto j = ( k % cols );
+                    this->coeffs( k ) = x[i][j];
+                }
+            } else {
+
+                for( size_t i = 0; i < rows; ++i ) {
+                    for( size_t j = 0; j < cols; ++j ) {
+                        this->coeffs( i, j ) = x[i][j];
+                    }
+                }
+            }
         }
 
         template <typename T>
@@ -62,8 +88,8 @@ namespace jmnel::matrix {
         }
 
         //        template <typename T>
-        //        void init1( T const& x, std::enable_if_t<std::is_convertible_v<T, Scalar>, void>*
-        //        = 0 ) {
+        //        void init1( T const& x, std::enable_if_t<std::is_convertible_v<T, Scalar>,
+        //        void>* = 0 ) {
         //            assertf( false );
         //        }
 
@@ -99,8 +125,7 @@ namespace jmnel::matrix {
             : Base( a0, a1, a2, a3, args... ) {}
 
         // -- Initializer list constructor --
-        explicit Matrix( std::initializer_list<std::initializer_list<Scalar>> const& list )
-            : Base( list ) {}
+        Matrix( std::initializer_list<std::initializer_list<Scalar>> const& list ) : Base( list ) {}
 
         void fill( const Scalar x ) {
             if constexpr( dimension == MatrixDimension::One ) {

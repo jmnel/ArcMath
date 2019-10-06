@@ -2,8 +2,8 @@
 BasedOnStyle: Google
 
 AccessModifierOffset: '-4'
-AllowShortFunctionsOnASingleLine: All
-BinPackArguments: 'true'
+AllowShortFunctionsOnASingleLine: Inline
+BinPackArguments: 'false'
 BinPackParameters: 'false'
 BreakConstructorInitializers: BeforeColon
 ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'

@@ -1,3 +1,4 @@
+#include <utility>
 #include "MatrixStorage.hpp"
 #pragma once
 
@@ -66,6 +67,11 @@ namespace jmnel::matrix::detail {
 
     public:
         MatrixStorageBase() noexcept {};
+
+        MatrixStorageBase( MatrixStorageBase &&other ) : m_storage( other.m_storage ) {
+            assertf( m_storage );
+            //            std::exchange( m_storage, other.m_storage );
+        }
 
         /// @todo: Should this take reference instead?
         //        MatrixStorageBase( Scalar *xPointer ) noexcept : m_storage( xPointer ) {}

@@ -3,31 +3,26 @@
 
 #include <Core/Debug/Assert.hpp>
 
-#include <Math/CoreMath.hpp>
-#include <Math/LinearAlgebra/Matrix.hpp>
-//#include <Math/Solvers/RevSimplex.hpp>
+#include <Math/LinearAlgebra/Matrix>
+#include "/home/jacques/repos/jmnel/ArcMath/src/Math/LinearAlgebra/MatrixOptions.hpp"
 
-#include <Math/LinearAlgebra/MatrixStorage.hpp>
-
+using std::array;
 using std::cout;
 using std::endl;
 
-using namespace arc;
-
-using Index = size_t;
+using namespace jmnel;
 
 int main( int, char *[] ) {
 
-    static_assert( std::is_same<detail::get_traits_t<Matrix<double, 2, 2>>::Options,
-                                MatrixDefaultOptions>::value );
+    Mat3x3d a = Mat3x3d::identiy();
+    Mat3x3d b = {{1, 2, 3}, {4, 5, 6}, {7, 8, 8}};
+    //    Matrix<double, 1, 5, MatrixOptions<>> a( 1.0 );
+    //    Matrix<double, 5, 1, MatrixOptions<>> b( -3.0 );
 
-    //    static_assert( detail::traits<Matrix<double, 2, 2>>::isRowMajor() );
-    //    assertf( detail::get_traits_t<decltype( a )>::isRowMajor() );
-    //        {{0, 1}, {1, 0}};
-    //    Matrix<double, 2, 2> b{{1, 2}, {3, 4}};
+    //    _ARC_DEBUG_BREAK();
+    auto c = normalize( a.row( 0 ) );
+    cout << c << endl;
+    //    cout << Mat3x3d::identiy() << endl;
 
-    //    cout << "a=" << endl;
-    //    cout << a << endl;
-    //    cout << "b=" << endl;
-    //    cout << b << endl;
+    //    auto c = a.row( 0 );
 }

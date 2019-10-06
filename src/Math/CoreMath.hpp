@@ -9,7 +9,7 @@
 
 //#include "Fixed.hpp"
 
-namespace arc {
+namespace jmnel {
 
 #define CORE_PRECISION_DOUBLE
 

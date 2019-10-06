@@ -1,0 +1,54 @@
+#pragma once
+
+#include "Matrix.hpp"
+#include "MatrixOptions.hpp"
+#include "MatrixFunctions.hpp"
+
+namespace jmnel {
+
+    template <typename T, size_t M, size_t N, typename OptionsT>
+    using Matrix = matrix::Matrix<T,M,N,OptionsT>;
+
+    template <typename T, size_t M, size_t N>
+    using Mat = matrix::Matrix<T, M, N, matrix::MatrixOptions<>>;
+
+    template <size_t M, size_t N>
+    using Matf = matrix::Matrix<float, M, N, matrix::MatrixOptions<>>;
+
+    template <size_t M, size_t N>
+    using Matd = matrix::Matrix<double, M, N, matrix::MatrixOptions<>>;
+
+    template <typename T, size_t N>
+    using Vec = matrix::Matrix<T, 1, N, matrix::MatrixOptions<>>;
+
+    template <size_t N>
+    using Vecf = Vec<float, N>;
+
+    template <size_t N>
+    using Vecd = Vec<double, N>;
+
+    using Vec2f = Vecf<2>;
+    using Vec3f = Vecf<3>;
+    using Vec4f = Vecf<4>;
+
+    using Vec2d = Vecd<2>;
+    using Vec3d = Vecd<3>;
+    using Vec4d = Vecd<4>;
+
+    using Mat2x2f = matrix::Matrix<float, 2, 2, matrix::MatrixOptions<>>;
+    using Mat2x2d = matrix::Matrix<double, 2, 2, matrix::MatrixOptions<>>;
+    //    using Mat2x2 = matrix::Matrix<double, 2, 2, matrix::MatrixOptions<>>;
+
+    using Mat3x3f = matrix::Matrix<float, 3, 3, matrix::MatrixOptions<>>;
+    using Mat3x3d = matrix::Matrix<double, 3, 3, matrix::MatrixOptions<>>;
+    //    using Mat3x3 = matrix::Matrix<double, 3, 3, matrix::MatrixOptions<>>;
+
+    using Mat4x4f = matrix::Matrix<float, 4, 4, matrix::MatrixOptions<>>;
+    using Mat4x4d = matrix::Matrix<double, 4, 4, matrix::MatrixOptions<>>;
+    //    using Mat4x4 = matrix::Matrix<double, 4, 4, matrix::MatrixOptions<>>;
+
+    using Mat5x5f = matrix::Matrix<float, 5, 5, matrix::MatrixOptions<>>;
+    using Mat5x5d = matrix::Matrix<double, 5, 5, matrix::MatrixOptions<>>;
+    //    using Mat5x5 = matrix::Matrix<double, 5, 5, matrix::MatrixOptions<>>;
+
+}  // namespace jmnel

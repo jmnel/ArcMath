@@ -65,9 +65,13 @@ namespace jmnel::matrix::detail {
 
         auto endElement() {
             if constexpr( isVectorType ) {
-                return ElementIterator( &static_cast<Derived *>( this )->coeffs( 0 ) );
+                //                return ElementIterator( &static_cast<Derived *>( this )->coeffs( 0
+                //                ) );
+                return ElementIterator( &static_cast<Derived *>( this )->coeffs( 0 ) +
+                                        size * innerStride );
             } else {
-                return ElementIterator( &static_cast<Derived *>( this )->coeffs( 0, 0 ) );
+                return ElementIterator( &static_cast<Derived *>( this )->coeffs( 0, 0 ) +
+                                        rows * outerStride * cols );
             }
         }
 
