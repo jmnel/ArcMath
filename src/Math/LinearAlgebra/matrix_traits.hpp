@@ -2,40 +2,30 @@
 
 #include <cstddef>
 
-#include "Common.hpp"
-#include "ForwardDeclare.hpp"
+#include "common.hpp"
+#include "forward_declare.hpp"
+#include "policies.hpp"
 
-namespace jmnel::matrix::detail {
+namespace jmnel::detail {
 
-    template <typename T>
-    struct traits;
+    template <typename T, size_t M, size_t N, typename Policies>
+    struct traits<matrix<T, M, N, Policies>> {
+        using value_type = T;
 
-    template <typename ScalarT, size_t rowsT, size_t colsT, typename OptionsT>
-    struct traits<Matrix<ScalarT, rowsT, colsT, OptionsT>> {
-        using Scalar = ScalarT;
-        static constexpr size_t rows = rowsT;
-        static constexpr size_t cols = colsT;
-        static constexpr size_t size = rows * cols;
+        static constexpr auto rows() { return M; }
+        static constexpr auto cols() { return N; }
+        static constexpr auto size() { return M * N; }
 
-        using Options = OptionsT;
+        static constexpr auto storage_policy() { return Policies::storage_policy(); }
+        static constexpr auto order_policy() { return Policies::order_policy(); }
+        static constexpr auto inner_density_policy() { return Policies::inner_density(); }
+        static constexpr auto outer_density_policy() { return Policies::outer_density(); }
+        static constexpr auto inner_stride() { return Policies::inner_stride(); }
+        static constexpr auto outer_stride() { return Policies::outer_stride(); }
 
-        static constexpr MatrixStorageType storageType = Options::storageType;
-        static constexpr MatrixStorageOrder storageOrder = Options::storageOrder;
-        static constexpr MatrixDensity innerDensity = Options::innerDensity;
-        static constexpr MatrixDensity outerDensity = Options::outerDensity;
-        static constexpr ptrdiff_t innerStride = Options::innerStride;
-        static constexpr ptrdiff_t outerStride = Options::outerStride;
-        static constexpr bool hasNamedMembers = Options::hasNamedMembers;
-
-        static constexpr bool isVectorType() {
-            return ( rows == 1 && cols != 1 ) || ( rows != 1 && cols == 1 );
+        static constexpr auto is_vector_type() {
+            return ( rows() == 1 && cols() != 1 ) || ( rows() != 1 && cols() == 1 );
         }
-
-        static constexpr MatrixDimension dimension =
-            isVectorType() ? MatrixDimension::One : MatrixDimension::Two;
-
-        static constexpr bool isRowMajor() { return storageOrder == MatrixStorageOrder::RowMajor; }
-        static constexpr bool isColMajor() { return storageOrder == MatrixStorageOrder::ColMajor; }
     };
 
-}  // namespace jmnel::matrix::detail
+}  // namespace jmnel::detail

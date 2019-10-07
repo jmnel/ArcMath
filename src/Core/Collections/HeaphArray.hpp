@@ -10,7 +10,7 @@
 using std::cout;
 using std::endl;
 
-namespace arc {
+namespace jmnel {
 
     template <typename T, std::size_t N>
     class HeapArray final {
@@ -283,4 +283,4 @@ namespace arc {
 
     };  // namespace arc
 
-}  // namespace arc
+}  // namespace jmnel

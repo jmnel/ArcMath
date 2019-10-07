@@ -49,12 +49,15 @@ namespace jmnel::matrix::detail {
 
                 if constexpr( traits<Derived>::isVectorType() ) {
                     assertf( list.size() == size );
-                    auto itElem = this->beginElement();
-                    auto it = list.begin();
-                    for( ; itElem != this->endElement(); ++itElem ) {
-                        *itElem = *it;
-                        it++;
+                    for( size_t i = 0; i < size; ++i ) {
+                        this->coeffs( i ) = 0.0;
                     }
+                    //                    auto itElem = this->beginElement();
+                    //                    auto it = list.begin();
+                    //                    for( ; itElem != this->endElement(); ++itElem ) {
+                    //                        *itElem = *it;
+                    //                        it++;
+                    //                    }
                 } else {
                     auto itList = list.begin();
                     for( size_t i = 0; i < rows; ++i ) {

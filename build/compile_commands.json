@@ -7,42 +7,6 @@
 
 {
   "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Arc2d.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Circle2d.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Line.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Plane.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Ray.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Sphere.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
   "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Core/.     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o Core/CMakeFiles/arclib.dir/Utility/Result.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/Result.cpp",
   "file": "/home/jacques/repos/jmnel/ArcMath/src/Core/Utility/Result.cpp"
 },
@@ -57,41 +21,5 @@
   "directory": "/home/jacques/repos/jmnel/ArcMath/build",
   "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/CoreMath.cpp",
   "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/CoreMath.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp"
-},
-
-{
-  "directory": "/home/jacques/repos/jmnel/ArcMath/build",
-  "command": "/usr/lib/llvm/8/bin/clang++   -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..     -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17 -o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o -c /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp",
-  "file": "/home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp"
 }
 ]

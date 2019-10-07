@@ -78,42 +78,6 @@ build playground/CMakeFiles/playground.dir/Main.cpp.o: CXX_COMPILER__playground 
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
   OBJECT_DIR = playground/CMakeFiles/playground.dir
   OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir
-build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Arc2d.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp || cmake_object_order_depends_target_playground
-  DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Arc2d.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
-  OBJECT_DIR = playground/CMakeFiles/playground.dir
-  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
-build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Circle2d.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp || cmake_object_order_depends_target_playground
-  DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Circle2d.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
-  OBJECT_DIR = playground/CMakeFiles/playground.dir
-  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
-build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Line.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp || cmake_object_order_depends_target_playground
-  DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Line.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
-  OBJECT_DIR = playground/CMakeFiles/playground.dir
-  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
-build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Plane.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp || cmake_object_order_depends_target_playground
-  DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Plane.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
-  OBJECT_DIR = playground/CMakeFiles/playground.dir
-  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
-build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Ray.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp || cmake_object_order_depends_target_playground
-  DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Ray.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
-  OBJECT_DIR = playground/CMakeFiles/playground.dir
-  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
-build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Sphere.cpp.o: CXX_COMPILER__playground /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp || cmake_object_order_depends_target_playground
-  DEP_FILE = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Sphere.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/playground/..
-  OBJECT_DIR = playground/CMakeFiles/playground.dir
-  OBJECT_FILE_DIR = playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes
 
 # =============================================================================
 # Link build statements for EXECUTABLE target playground
@@ -122,7 +86,7 @@ build playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Sphere.cpp.o:
 #############################################
 # Link the executable bin/playground
 
-build bin/playground: CXX_EXECUTABLE_LINKER__playground playground/CMakeFiles/playground.dir/Main.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Arc2d.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Circle2d.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Line.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Plane.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Ray.cpp.o playground/CMakeFiles/playground.dir/__/Math/Geometry/Shapes/Sphere.cpp.o | lib/libarcmath.a || lib/libarcmath.a
+build bin/playground: CXX_EXECUTABLE_LINKER__playground playground/CMakeFiles/playground.dir/Main.cpp.o | lib/libarcmath.a || lib/libarcmath.a
   FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG
   LINK_LIBRARIES = -Wl,-rpath,/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib lib/libarcmath.a
   LINK_PATH = -L/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib
@@ -230,42 +194,6 @@ build Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o: CXX_COMPILER__arcmath /home/ja
   INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir
-build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Arc2d.cpp || cmake_object_order_depends_target_arcmath
-  DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
-  OBJECT_DIR = Math/CMakeFiles/arcmath.dir
-  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
-build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Circle2d.cpp || cmake_object_order_depends_target_arcmath
-  DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
-  OBJECT_DIR = Math/CMakeFiles/arcmath.dir
-  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
-build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Line.cpp || cmake_object_order_depends_target_arcmath
-  DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
-  OBJECT_DIR = Math/CMakeFiles/arcmath.dir
-  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
-build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Plane.cpp || cmake_object_order_depends_target_arcmath
-  DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
-  OBJECT_DIR = Math/CMakeFiles/arcmath.dir
-  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
-build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Ray.cpp || cmake_object_order_depends_target_arcmath
-  DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
-  OBJECT_DIR = Math/CMakeFiles/arcmath.dir
-  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
-build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o: CXX_COMPILER__arcmath /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/Shapes/Sphere.cpp || cmake_object_order_depends_target_arcmath
-  DEP_FILE = Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o.d
-  FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG   -std=c++17 -std=gnu++17
-  INCLUDES = -I/home/jacques/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/home/jacques/repos/jmnel/ArcMath/src/Math/. -I/home/jacques/repos/jmnel/ArcMath/src/Math/..
-  OBJECT_DIR = Math/CMakeFiles/arcmath.dir
-  OBJECT_FILE_DIR = Math/CMakeFiles/arcmath.dir/Geometry/Shapes
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target arcmath
@@ -274,7 +202,7 @@ build Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o: CXX_COMPILER__ar
 #############################################
 # Link the static library lib/libarcmath.a
 
-build lib/libarcmath.a: CXX_STATIC_LIBRARY_LINKER__arcmath Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Arc2d.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Circle2d.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Line.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Plane.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Ray.cpp.o Math/CMakeFiles/arcmath.dir/Geometry/Shapes/Sphere.cpp.o
+build lib/libarcmath.a: CXX_STATIC_LIBRARY_LINKER__arcmath Math/CMakeFiles/arcmath.dir/CoreMath.cpp.o
   LANGUAGE_COMPILE_FLAGS = -fsanitize=undefined,address,leak -fcolor-diagnostics -fdiagnostics-show-template-tree -pedantic -Wall -Werror=return-type -Wextra -Wmissing-field-initializers -Wno-predefined-identifier-outside-function  -O2 -g -DNDEBUG
   OBJECT_DIR = Math/CMakeFiles/arcmath.dir
   POST_BUILD = :
@@ -338,13 +266,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/jacques/repos/jmnel/ArcMath/src/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Debug/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/LinearAlgebra/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/playground/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.14.6/CMakeCXXCompiler.cmake CMakeFiles/3.14.6/CMakeSystem.cmake conanbuildinfo.cmake
+build build.ninja: RERUN_CMAKE | /home/jacques/repos/jmnel/ArcMath/src/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Debug/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/LinearAlgebra/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/playground/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.14.6/CMakeCXXCompiler.cmake CMakeFiles/3.14.6/CMakeSystem.cmake conanbuildinfo.cmake
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/jacques/repos/jmnel/ArcMath/src/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Debug/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/Geometry/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/LinearAlgebra/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/playground/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.14.6/CMakeCXXCompiler.cmake CMakeFiles/3.14.6/CMakeSystem.cmake conanbuildinfo.cmake: phony
+build /home/jacques/repos/jmnel/ArcMath/src/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Debug/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Core/Utility/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/Math/LinearAlgebra/CMakeLists.txt /home/jacques/repos/jmnel/ArcMath/src/playground/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.14.6/CMakeCXXCompiler.cmake CMakeFiles/3.14.6/CMakeSystem.cmake conanbuildinfo.cmake: phony
 
 #############################################
 # Clean all the built files.

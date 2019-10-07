@@ -6,10 +6,10 @@
 #include <type_traits>
 #include <utility>
 
-#include "BinaryOperators.hpp"
-#include "Common.hpp"
-#include "MatrixBase.hpp"
-#include "MatrixOptions.hpp"
+//#include "BinaryOperators.hpp"
+//#include "Common.hpp"
+//#include "MatrixBase.hpp"
+//#include "MatrixOptions.hpp"
 
 using std::cout;
 using std::enable_if;
@@ -111,7 +111,8 @@ namespace jmnel::matrix {
         Matrix( Matrix&& other ) noexcept : Base( std::move( other ) ) {}
 
         Matrix& operator=( Matrix&& other ) noexcept {
-            other.swap( *this );
+            Base( std::move( other ) );
+            //            other.swap( *this );
             return *this;
         }
 

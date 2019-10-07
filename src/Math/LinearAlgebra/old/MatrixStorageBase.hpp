@@ -1,10 +1,10 @@
-#include <utility>
-#include "MatrixStorage.hpp"
 #pragma once
 
 #include <array>
+#include <utility>
 
 #include <Core/Debug/Assert.hpp>
+#include "MatrixStorage.hpp"
 
 #include "Common.hpp"
 #include "Traits.hpp"
